@@ -1,0 +1,625 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9" pages="6">
+  <diagram name="事業プロセス" id="Upq2zGf7RkK0_gL1ATr_">
+    <mxGraphModel dx="2221" dy="2200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-3" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;総資本&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;(総資産)&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="314" y="225" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-5" value="&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;売上高&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="590" y="225" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endSize=15;" edge="1" parent="1" source="96Ln_9AW7hbP08V7V4A6-6" target="96Ln_9AW7hbP08V7V4A6-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-6" value="&lt;font style=&quot;color: rgb(0, 153, 77);&quot;&gt;当期純利益&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="870" y="225" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=15;strokeWidth=5;" edge="1" parent="1" source="96Ln_9AW7hbP08V7V4A6-2" target="96Ln_9AW7hbP08V7V4A6-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=15;strokeWidth=5;" edge="1" parent="1" source="96Ln_9AW7hbP08V7V4A6-1" target="96Ln_9AW7hbP08V7V4A6-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=15;strokeWidth=5;" edge="1" parent="1" source="96Ln_9AW7hbP08V7V4A6-3" target="96Ln_9AW7hbP08V7V4A6-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="485" as="sourcePoint" />
+            <mxPoint x="625" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=15;strokeWidth=5;" edge="1" parent="1" source="96Ln_9AW7hbP08V7V4A6-5" target="96Ln_9AW7hbP08V7V4A6-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="360" as="sourcePoint" />
+            <mxPoint x="960" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-11" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;【&lt;b&gt;第2段階&lt;/b&gt;】資産を売上に変える&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 28px;&quot;&gt;総資本回転率＝&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;売上高&lt;/font&gt;÷&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;総資本&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;strokeWidth=5;direction=south;flipV=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="460" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endSize=15;" edge="1" parent="1" source="96Ln_9AW7hbP08V7V4A6-1" target="96Ln_9AW7hbP08V7V4A6-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="140" />
+              <mxPoint x="20" y="610" />
+              <mxPoint x="1085" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-1" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;自己資本&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;(資本金など)&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-2" value="&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;他人資本&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(153, 51, 255);&quot;&gt;(借入金など)&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-12" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;【&lt;b&gt;第1段階&lt;/b&gt;】資産を取得するための資金を調達する&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 28px;&quot;&gt;財務レバレッジ＝&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;自己資本&lt;/font&gt;÷&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;総資本&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;html=1;rounded=1;flipH=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;strokeWidth=5;direction=south;flipV=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-14" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;【&lt;b&gt;第3段階&lt;/b&gt;】売上を利益に変える&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 28px;&quot;&gt;当期純利益率＝&lt;font style=&quot;color: rgb(0, 153, 77);&quot;&gt;当期純利益&lt;/font&gt;÷&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;売上高&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;strokeWidth=5;direction=south;flipV=0;" vertex="1" parent="1">
+          <mxGeometry x="592" y="160" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="96Ln_9AW7hbP08V7V4A6-20" value="&lt;div&gt;&lt;span style=&quot;font-size: 28px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;【金融商品(投資対象)の利率】&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 28px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ROE=&lt;/span&gt;&lt;font style=&quot;font-size: 28px; background-color: transparent; color: rgb(0, 153, 77);&quot;&gt;当期純利益&lt;/font&gt;&lt;span style=&quot;font-size: 28px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;÷&lt;/span&gt;&lt;font style=&quot;font-size: 28px; background-color: transparent; color: rgb(255, 181, 112);&quot;&gt;自己資本&lt;/font&gt;&lt;span style=&quot;font-size: 28px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;×100&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="870" y="435" width="430" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HzvLTGtqJ3aYzJww6yUd" name="PLとBSから財務指標を計算">
+    <mxGraphModel dx="1502" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-44" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="570" y="370" width="360" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-10" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;BS&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-44">
+          <mxGeometry x="150.6122448979592" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-23" value="&lt;font&gt;純資産の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;align=center;spacingLeft=10;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-44">
+          <mxGeometry x="180" y="362.5" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-24" value="資本金&lt;div&gt;利益剰余金&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-44">
+          <mxGeometry x="180" y="407.5" width="180" height="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-19" value="&lt;font&gt;負債の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-44">
+          <mxGeometry x="180" y="70" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-14" value="&lt;div&gt;現金及び預金&lt;/div&gt;在庫&lt;div&gt;機械装置&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-44">
+          <mxGeometry y="113" width="180" height="437" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-15" value="&lt;font&gt;資産の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-44">
+          <mxGeometry y="70" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-21" value="借入金" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-44">
+          <mxGeometry x="180" y="115" width="180" height="248" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-46" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;&lt;b&gt;自己&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;&lt;b&gt;資本&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;strokeWidth=3;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="970" y="730" width="40" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-47" value="&lt;span style=&quot;color: rgb(0, 0, 0); background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;総資産&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;color: rgb(0, 0, 0); background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;(=総資本)&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;strokeWidth=3;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1110" y="440" width="40" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-67" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;④自己資本利益率(ROE)&lt;/font&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;" edge="1" parent="1" source="ZsgAXKlUR87d3cI83SyZ-41">
+          <mxGeometry x="-0.1134" y="20" relative="1" as="geometry">
+            <mxPoint x="1600" y="910" as="sourcePoint" />
+            <mxPoint x="1040" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1090" y="970" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-68" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1310" y="130" width="270" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-30" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;PL&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;container=0;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry x="95" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-32" value="&lt;div&gt;税引き前当期純利益&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="680" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-33" value="&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;売上高&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=1" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="70" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-34" value="&lt;div&gt;&lt;font&gt;売上原価&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　期首商品棚卸高&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　当期商品仕入高&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　期末商品棚卸高&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　　差引&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="110" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-35" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;　法人税等&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="720" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-36" value="&lt;div&gt;営業利益&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="500" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-37" value="&lt;div&gt;販売費及び一般管理費&lt;/div&gt;&lt;div&gt;&lt;font&gt;　給料手当&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　外注費&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　荷造運賃発送費&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　事務用品費&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　減価償却費&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="310" width="270" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-38" value="&lt;div&gt;&lt;font&gt;売上総利益（粗利）&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="270" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-39" value="&lt;div&gt;経常利益&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="640" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-40" value="&lt;div&gt;営業外費用&lt;/div&gt;&lt;div&gt;　支払利息&lt;/div&gt;&lt;div&gt;　繰延資産償却費&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="540" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-41" value="&lt;div&gt;&lt;font style=&quot;color: rgb(0, 153, 77);&quot;&gt;当期純利益&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=1;" vertex="1" parent="ZsgAXKlUR87d3cI83SyZ-68">
+          <mxGeometry y="760" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-51" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;③当期純利益率&lt;/font&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;" edge="1" parent="ZsgAXKlUR87d3cI83SyZ-68" source="ZsgAXKlUR87d3cI83SyZ-33" target="ZsgAXKlUR87d3cI83SyZ-41">
+          <mxGeometry x="0.8734" y="50" relative="1" as="geometry">
+            <mxPoint x="580" y="450" as="sourcePoint" />
+            <mxPoint x="750" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="480" />
+            </Array>
+            <mxPoint x="40" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-69" value="&lt;span&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;②総資本回転率&lt;/font&gt;&lt;/span&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;fontStyle=0" edge="1" parent="1" source="ZsgAXKlUR87d3cI83SyZ-33">
+          <mxGeometry x="-0.4" y="-10" relative="1" as="geometry">
+            <mxPoint x="1605" y="760" as="sourcePoint" />
+            <mxPoint x="1220" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1280" y="220" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZsgAXKlUR87d3cI83SyZ-72" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;①財務&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;レバレッジ&lt;/span&gt;&lt;/div&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;fontStyle=0" edge="1" parent="1">
+          <mxGeometry x="-0.0833" y="-40" relative="1" as="geometry">
+            <mxPoint x="1140" y="680" as="sourcePoint" />
+            <mxPoint x="1040" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1140" y="680" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="収益性指標" id="mYA8vMo2874j9VQUydbu">
+    <mxGraphModel dx="1502" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-0" />
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-1" parent="IQdEgYoxt_0VfypP_kHq-0" />
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-2" value="" style="group" vertex="1" connectable="0" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="570" y="370" width="360" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-3" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;BS&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-2">
+          <mxGeometry x="150.6122448979592" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-4" value="&lt;font&gt;純資産の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;align=center;spacingLeft=10;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-2">
+          <mxGeometry x="180" y="362.5" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-5" value="資本金&lt;div&gt;利益剰余金&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-2">
+          <mxGeometry x="180" y="407.5" width="180" height="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-6" value="&lt;font&gt;負債の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-2">
+          <mxGeometry x="180" y="70" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-7" value="&lt;div&gt;現金及び預金&lt;/div&gt;在庫&lt;div&gt;機械装置&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-2">
+          <mxGeometry y="113" width="180" height="437" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-8" value="&lt;font&gt;資産の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-2">
+          <mxGeometry y="70" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-9" value="借入金" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-2">
+          <mxGeometry x="180" y="115" width="180" height="248" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-10" value="&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;&lt;b&gt;自己&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 181, 112);&quot;&gt;&lt;b&gt;資本&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;strokeWidth=3;fontSize=24;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="970" y="730" width="40" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-11" value="&lt;span style=&quot;color: rgb(0, 0, 0); background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;総資産&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;color: rgb(0, 0, 0); background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;(=総資本)&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;strokeWidth=3;fontSize=24;fontStyle=1" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1070" y="440" width="40" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-12" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;自己資本利益率&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;(ROE)&lt;/font&gt;&lt;/div&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;" edge="1" parent="IQdEgYoxt_0VfypP_kHq-1" source="IQdEgYoxt_0VfypP_kHq-24">
+          <mxGeometry x="0.2793" y="40" relative="1" as="geometry">
+            <mxPoint x="1600" y="910" as="sourcePoint" />
+            <mxPoint x="1040" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1090" y="970" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-26" value="&lt;span&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;総資本回転率&lt;/font&gt;&lt;/span&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;fontStyle=0" edge="1" parent="IQdEgYoxt_0VfypP_kHq-1" source="IQdEgYoxt_0VfypP_kHq-16">
+          <mxGeometry x="-0.7" y="-30" relative="1" as="geometry">
+            <mxPoint x="1605" y="760" as="sourcePoint" />
+            <mxPoint x="1150" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="210" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-27" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;財務&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;レバレッジ&lt;/span&gt;&lt;/div&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;fontStyle=0;exitX=0.441;exitY=0.495;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="IQdEgYoxt_0VfypP_kHq-1" source="IQdEgYoxt_0VfypP_kHq-11">
+          <mxGeometry x="-0.3353" y="-45" relative="1" as="geometry">
+            <mxPoint x="1080" y="680" as="sourcePoint" />
+            <mxPoint x="1040" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1140" y="680" />
+            </Array>
+            <mxPoint x="25" y="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QpWueOjH7ZvAaBdnUlhv-1" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;粗利率&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;fontStyle=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="IQdEgYoxt_0VfypP_kHq-1" source="IQdEgYoxt_0VfypP_kHq-16" target="IQdEgYoxt_0VfypP_kHq-21">
+          <mxGeometry x="-0.0303" relative="1" as="geometry">
+            <mxPoint x="1310" y="220" as="sourcePoint" />
+            <mxPoint x="1170" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1240" y="230" />
+              <mxPoint x="1240" y="420" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-14" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;PL&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;container=0;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1405" y="130" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-15" value="&lt;div&gt;税引き前当期純利益&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="810" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-16" value="&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;売上高&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=1" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="200" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-17" value="&lt;div&gt;&lt;font&gt;売上原価&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　期首商品棚卸高&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　当期商品仕入高&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　期末商品棚卸高&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　　差引&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="240" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-18" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;　法人税等&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="850" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-19" value="&lt;div&gt;営業利益&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="630" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-20" value="&lt;div&gt;販売費及び一般管理費&lt;/div&gt;&lt;div&gt;&lt;font&gt;　給料手当&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　外注費&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　荷造運賃発送費&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　事務用品費&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　減価償却費&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="440" width="270" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-21" value="&lt;div&gt;&lt;font&gt;売上総利益（粗利）&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="400" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-22" value="&lt;div&gt;経常利益&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="770" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-23" value="&lt;div&gt;営業外費用&lt;/div&gt;&lt;div&gt;　支払利息&lt;/div&gt;&lt;div&gt;　繰延資産償却費&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="670" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-24" value="&lt;div&gt;&lt;font style=&quot;color: rgb(0, 153, 77);&quot;&gt;当期純利益&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=1;" vertex="1" parent="IQdEgYoxt_0VfypP_kHq-1">
+          <mxGeometry x="1310" y="890" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IQdEgYoxt_0VfypP_kHq-25" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;当期純利益率&lt;/font&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;" edge="1" parent="IQdEgYoxt_0VfypP_kHq-1" source="IQdEgYoxt_0VfypP_kHq-16" target="IQdEgYoxt_0VfypP_kHq-24">
+          <mxGeometry x="0.8734" y="50" relative="1" as="geometry">
+            <mxPoint x="1890" y="580" as="sourcePoint" />
+            <mxPoint x="2060" y="1020" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1680" y="210" />
+            </Array>
+            <mxPoint x="40" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QpWueOjH7ZvAaBdnUlhv-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;営業&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;利益率&lt;/font&gt;&lt;/div&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="IQdEgYoxt_0VfypP_kHq-1" source="IQdEgYoxt_0VfypP_kHq-16" target="IQdEgYoxt_0VfypP_kHq-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1600" y="290" as="sourcePoint" />
+            <mxPoint x="1600" y="980" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1630" y="430" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QpWueOjH7ZvAaBdnUlhv-4" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;総資本利益率&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;(ROA)&lt;/font&gt;&lt;/div&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;" edge="1" parent="IQdEgYoxt_0VfypP_kHq-1" source="IQdEgYoxt_0VfypP_kHq-24">
+          <mxGeometry x="0.3143" y="-40" relative="1" as="geometry">
+            <mxPoint x="1895" y="1140" as="sourcePoint" />
+            <mxPoint x="1150" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1320" y="910" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="安全性指標" id="UACTl8h-8PavnwaHizsd">
+    <mxGraphModel dx="930" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-0" />
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-1" parent="93HBfJXlQ5ZZF6NpgjsH-0" />
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-10" value="&lt;font style=&quot;&quot;&gt;&lt;b&gt;自己&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;資本&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;strokeWidth=3;fontSize=24;fillColor=#e1d5e7;strokeColor=#9933FF;fontColor=#9933FF;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="940" y="740" width="40" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-11" value="&lt;span style=&quot;background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;&quot;&gt;総資産&lt;/font&gt;&lt;/span&gt;&lt;div style=&quot;background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;&quot;&gt;(=総資本)&lt;/font&gt;&lt;/div&gt;" style="shape=curlyBracket;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;strokeWidth=3;fontSize=24;fontStyle=1;fillColor=#e1d5e7;strokeColor=#FF66FF;fontColor=#FF66FF;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="1020" y="440" width="40" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-3" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;BS&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="633.3673469387754" y="370" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-4" value="&lt;font&gt;純資産の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;align=center;spacingLeft=10;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="675" y="740" width="254.99999999999997" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-5" value="資本金&lt;div&gt;利益剰余金&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="675" y="780" width="255" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-6" value="&lt;font&gt;負債の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="675" y="440" width="254.99999999999997" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-7" value="&lt;div&gt;&lt;b&gt;流動資産&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;　現金及び預金&lt;/span&gt;&lt;/div&gt;&lt;div&gt;　受取手形&lt;/div&gt;&lt;div&gt;　売掛金&lt;/div&gt;&lt;div&gt;　未収入金&lt;/div&gt;&lt;div&gt;　棚卸資産&lt;/div&gt;&lt;div&gt;　商品・材料&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="420" y="483" width="254.99999999999997" height="257" as="geometry" />
+        </mxCell>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-8" value="&lt;font&gt;資産の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=1;fontSize=25;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="420" y="440" width="254.99999999999997" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="93HBfJXlQ5ZZF6NpgjsH-9" value="&lt;b&gt;流動負債&lt;/b&gt;&lt;div&gt;　買掛金&lt;/div&gt;&lt;div&gt;　短期借入金&lt;/div&gt;&lt;div&gt;　契約負債&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="675" y="485" width="255" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="-36oS9LrhNqOvaBsz9ng-1" value="&lt;b&gt;固定負債&lt;/b&gt;&lt;div&gt;　長期借入金&lt;/div&gt;&lt;div&gt;　社債&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="675" y="630" width="255" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-36oS9LrhNqOvaBsz9ng-2" value="&lt;div&gt;&lt;b&gt;固定資産&lt;/b&gt;&lt;/div&gt;&lt;div&gt;　有形固定資産&lt;/div&gt;&lt;div&gt;　無形固定資産&lt;/div&gt;&lt;div&gt;　投資その他の資産&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="420" y="740" width="254.99999999999997" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="-36oS9LrhNqOvaBsz9ng-5" value="&lt;font style=&quot;font-size: 35px; color: rgb(255, 51, 51);&quot;&gt;&lt;b&gt;流動&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 35px; color: rgb(255, 51, 51);&quot;&gt;&lt;b&gt;比率&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=corner;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF3333;strokeWidth=5;dx=256;dy=142;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingRight=0;spacingLeft=10;spacingBottom=80;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="419" y="484" width="513" height="251" as="geometry" />
+        </mxCell>
+        <mxCell id="-36oS9LrhNqOvaBsz9ng-6" value="&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;固定長期&lt;/font&gt;&lt;span style=&quot;color: light-dark(rgb(51, 51, 255), rgb(168, 168, 255)); background-color: transparent;&quot;&gt;適合率&lt;/span&gt;" style="shape=corner;html=1;fillColor=none;strokeColor=#3333FF;strokeWidth=5;dx=249;dy=170;direction=west;fontSize=35;fontStyle=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;spacingTop=5;spacingRight=270;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="420" y="634" width="509" height="281" as="geometry" />
+        </mxCell>
+        <mxCell id="-36oS9LrhNqOvaBsz9ng-8" value="&lt;b&gt;&lt;font style=&quot;color: rgb(0, 204, 102); font-size: 35px;&quot;&gt;固定比率&lt;/font&gt;&lt;/b&gt;" style="shape=corner;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#00CC66;strokeWidth=5;dx=240;dy=160;direction=west;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;spacingTop=10;spacingLeft=350;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="425" y="744" width="500" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="-36oS9LrhNqOvaBsz9ng-9" value="&lt;font style=&quot;color: rgb(255, 153, 51);&quot;&gt;&lt;span style=&quot;font-size: 35px;&quot;&gt;&lt;b style=&quot;&quot;&gt;当座&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 35px; color: rgb(255, 153, 51);&quot;&gt;&lt;b style=&quot;&quot;&gt;比率&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=corner;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF9933;strokeWidth=5;dx=245;dy=130;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=10;spacingLeft=0;spacingBottom=80;direction=east;" vertex="1" parent="93HBfJXlQ5ZZF6NpgjsH-1">
+          <mxGeometry x="425" y="491" width="500" height="159" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ncRl7WhrnxMt4Rwb7eZR" name="会社の状況把握">
+    <mxGraphModel dx="1952" dy="1444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_qzinJEtdRWWOo30ffIm-3" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="500" y="500" width="300" height="356.5853658536586" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-7" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;売上高&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="_qzinJEtdRWWOo30ffIm-3">
+          <mxGeometry x="150" width="150" height="356.5853658536586" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-8" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;費用&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="_qzinJEtdRWWOo30ffIm-3">
+          <mxGeometry y="146.82926829268297" width="150" height="209.7560975609756" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-9" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;利益&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="_qzinJEtdRWWOo30ffIm-3">
+          <mxGeometry width="150" height="146.82926829268294" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-1" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=146.25;endSize=71.02499999999999;width=162.5;strokeWidth=3;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1910" y="316" as="sourcePoint" />
+            <mxPoint x="403" y="315.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endSize=15;edgeStyle=elbowEdgeStyle;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="arZzck871m7OUutef63d-3" target="arZzck871m7OUutef63d-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-3" value="利益をあげる" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=5;fontSize=40;" vertex="1" parent="1">
+          <mxGeometry x="520" y="267" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-4" value="投資する" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=5;fontSize=40;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="267" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-5" value="お金を集める" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=5;fontSize=40;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="267" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endSize=15;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=elbowEdgeStyle;dashed=1;" edge="1" parent="1" source="arZzck871m7OUutef63d-3" target="arZzck871m7OUutef63d-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270" y="860" as="sourcePoint" />
+            <mxPoint x="1210" y="968" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endSize=15;edgeStyle=elbowEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="arZzck871m7OUutef63d-4" target="arZzck871m7OUutef63d-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="690" as="sourcePoint" />
+            <mxPoint x="1150" y="1331" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1100" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endSize=15;edgeStyle=elbowEdgeStyle;dashed=1;" edge="1" parent="1" source="arZzck871m7OUutef63d-5" target="arZzck871m7OUutef63d-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1160" y="970" as="sourcePoint" />
+            <mxPoint x="969.6500000000001" y="1443.5178571428569" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1790" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endSize=15;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="arZzck871m7OUutef63d-4" target="arZzck871m7OUutef63d-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="400" as="sourcePoint" />
+            <mxPoint x="640" y="508" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;endSize=15;" edge="1" parent="1" target="arZzck871m7OUutef63d-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="367" as="sourcePoint" />
+            <mxPoint x="1920" y="628" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-39" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="440" y="960" width="580" height="451" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-23" value="" style="group" vertex="1" connectable="0" parent="arZzck871m7OUutef63d-39">
+          <mxGeometry x="62.5" width="455" height="381" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-24" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;営業キャッシュフロー&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;align=left;spacingLeft=10;" vertex="1" parent="arZzck871m7OUutef63d-23">
+          <mxGeometry width="449.6470588235294" height="108.85714285714286" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-25" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;投資キャッシュフロー&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;align=left;spacingLeft=10;" vertex="1" parent="arZzck871m7OUutef63d-23">
+          <mxGeometry y="108.85714285714286" width="449.6470588235294" height="108.85714285714286" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-26" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;財務キャッシュフロー&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;align=left;spacingLeft=10;" vertex="1" parent="arZzck871m7OUutef63d-23">
+          <mxGeometry y="217.71428571428572" width="449.6470588235294" height="108.85714285714286" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-27" value="&lt;span style=&quot;font-size: 35px;&quot;&gt;現金の残高&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;align=center;spacingLeft=10;" vertex="1" parent="arZzck871m7OUutef63d-23">
+          <mxGeometry y="326.57142857142856" width="449.6470588235294" height="54.42857142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-28" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 45px; line-height: 100%;&quot;&gt;＋&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 45px; line-height: 100%;&quot;&gt;ー&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="arZzck871m7OUutef63d-23">
+          <mxGeometry x="379.64882352941174" y="4.43357142857143" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-29" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 45px; line-height: 100%;&quot;&gt;＋&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 45px; line-height: 100%;&quot;&gt;ー&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="arZzck871m7OUutef63d-23">
+          <mxGeometry x="379.65" y="113.28999999999996" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-30" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 45px; line-height: 100%;&quot;&gt;＋&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 45px; line-height: 100%;&quot;&gt;ー&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="arZzck871m7OUutef63d-23">
+          <mxGeometry x="379.65" y="222.1400000000001" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-37" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;キャッシュフロー計算書CS&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="arZzck871m7OUutef63d-39">
+          <mxGeometry y="381" width="580" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iX9_a07Nhj7qVL0lNyIQ-3" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1200" y="495.12" width="520" height="564.88" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-21" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;純資産の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fillColor=#B3B3B3;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry x="260" y="300.59624999999994" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-22" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;資本金&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 35px;&quot;&gt;利益剰余金&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry x="260" y="350.59875" width="260" height="144.28125" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-12" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;繰延資産&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry y="384.88" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-13" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;資産の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fillColor=#B3B3B3;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-14" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;流動資産&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry y="50.00249999999994" width="260" height="144.28125" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-15" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;固定資産&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry y="184.88374999999996" width="260" height="205.03125000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-17" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;負債の部&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fillColor=#B3B3B3;fontColor=#333333;strokeColor=#666666;fontStyle=1" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry x="260" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-19" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;流動負債&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry x="260" y="50.00249999999994" width="260" height="119.84918478260873" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-20" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;固定負債&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontStyle=0" vertex="1" parent="iX9_a07Nhj7qVL0lNyIQ-3">
+          <mxGeometry x="260" y="169.8516847826087" width="260" height="130.74456521739134" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-53" value="" style="group;spacingLeft=15;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1201" y="500" width="530" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-41" value="&lt;b&gt;①お金の集め方を見る&lt;/b&gt;&lt;div&gt;※特に「有利子負債」と&lt;/div&gt;&lt;div&gt;「利益剰余金」を見る&lt;/div&gt;" style="rounded=0;html=1;fillColor=none;strokeColor=#FF3333;strokeWidth=6;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fontSize=35;labelBackgroundColor=default;spacingLeft=250;fontColor=#FF3333;spacingTop=15;" vertex="1" parent="arZzck871m7OUutef63d-53">
+          <mxGeometry x="263.1275391339508" width="250" height="484" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-42" value="&lt;b&gt;②経営の安全性を見る&lt;/b&gt;&lt;div&gt;現金保有なのか、&lt;/div&gt;&lt;div&gt;物を持っているのか&lt;/div&gt;" style="rounded=0;html=1;fillColor=none;strokeColor=#3333FF;strokeWidth=6;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fontSize=35;labelBackgroundColor=default;spacingLeft=0;fontColor=#3333FF;spacingRight=250;spacingTop=5;" vertex="1" parent="arZzck871m7OUutef63d-53">
+          <mxGeometry x="-6" y="-10" width="530" height="505" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-38" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;貸借対照表BS&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="420" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iX9_a07Nhj7qVL0lNyIQ-7" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;strokeWidth=5;strokeColor=#00CC66;" edge="1" parent="1" source="arZzck871m7OUutef63d-7" target="arZzck871m7OUutef63d-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="860" as="sourcePoint" />
+            <mxPoint x="1090" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iX9_a07Nhj7qVL0lNyIQ-8" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=5;strokeColor=#00CC66;" edge="1" parent="1" source="arZzck871m7OUutef63d-7" target="arZzck871m7OUutef63d-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1370" y="640" as="sourcePoint" />
+            <mxPoint x="1765" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iX9_a07Nhj7qVL0lNyIQ-9" value="&lt;font style=&quot;font-size: 35px; color: rgb(0, 204, 102);&quot;&gt;&lt;b&gt;③売上効率を見る&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 35px; color: rgb(0, 204, 102);&quot;&gt;総資本回転率を&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 35px; color: rgb(0, 204, 102);&quot;&gt;算出する&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="805" y="525" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="arZzck871m7OUutef63d-36" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;損益計算書PL&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="856.5853658536586" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_qzinJEtdRWWOo30ffIm-1" value="&lt;div&gt;&lt;font color=&quot;#ff9933&quot;&gt;&lt;span style=&quot;font-size: 35px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;b&gt;④会社の利益率を見る&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;font color=&quot;#ff9933&quot;&gt;&lt;span style=&quot;font-size: 35px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;当期純利益率を&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#ff9933&quot;&gt;&lt;span style=&quot;font-size: 35px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;算出する&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=corner;html=1;fillColor=none;strokeColor=#FF9933;strokeWidth=5;dx=150;dy=153;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=10;spacingLeft=0;spacingBottom=80;direction=east;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="496" y="497" width="304" height="362" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="JMFnWGTjzJ0W8xkADXQK" name="利益率">
+    <mxGraphModel dx="257" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-1" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;経常利益率&lt;/span&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;fontStyle=0" edge="1" parent="1" source="NtR_GPXBLAEKfssdxJfV-4" target="NtR_GPXBLAEKfssdxJfV-10">
+          <mxGeometry x="0.75" y="-20" relative="1" as="geometry">
+            <mxPoint x="1605" y="760" as="sourcePoint" />
+            <mxPoint x="1150" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1200" y="210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-2" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;粗利率&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;fontStyle=0;" edge="1" parent="1" source="NtR_GPXBLAEKfssdxJfV-4" target="NtR_GPXBLAEKfssdxJfV-9">
+          <mxGeometry x="0.5652" y="-20" relative="1" as="geometry">
+            <mxPoint x="1310" y="220" as="sourcePoint" />
+            <mxPoint x="1170" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1230" y="230" />
+              <mxPoint x="1230" y="300" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-3" value="&lt;div&gt;税引き前当期純利益&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="570" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-4" value="&lt;font style=&quot;&quot;&gt;売上高&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="200" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-5" value="&lt;div&gt;&lt;font&gt;売上原価&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="240" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-6" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;　法人税等&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="610" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-7" value="&lt;div&gt;&lt;b&gt;営業利益&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1310" y="450" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-8" value="&lt;div&gt;販売費及び一般管理費&lt;/div&gt;&lt;div&gt;&lt;font&gt;　給料手当&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　外注費&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;　荷造運賃発送費&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="320" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-9" value="&lt;div&gt;&lt;font&gt;&lt;b&gt;売上総利益（粗利）&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1310" y="280" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-10" value="&lt;div&gt;&lt;b&gt;経常利益&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1310" y="530" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-11" value="&lt;div&gt;営業外費用&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="490" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-12" value="&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;当期純利益&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=25;align=left;spacingLeft=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="650" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-13" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;当期純利益率&lt;/font&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;" edge="1" parent="1" source="NtR_GPXBLAEKfssdxJfV-4" target="NtR_GPXBLAEKfssdxJfV-12">
+          <mxGeometry x="0.7895" y="20" relative="1" as="geometry">
+            <mxPoint x="1890" y="580" as="sourcePoint" />
+            <mxPoint x="2060" y="1020" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1730" y="210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtR_GPXBLAEKfssdxJfV-14" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;営業&lt;/font&gt;&lt;span style=&quot;font-size: 24px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;利益率&lt;/span&gt;" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;strokeWidth=5;elbow=vertical;" edge="1" parent="1" source="NtR_GPXBLAEKfssdxJfV-4" target="NtR_GPXBLAEKfssdxJfV-7">
+          <mxGeometry x="0.65" y="20" relative="1" as="geometry">
+            <mxPoint x="1600" y="290" as="sourcePoint" />
+            <mxPoint x="1600" y="980" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1660" y="230" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

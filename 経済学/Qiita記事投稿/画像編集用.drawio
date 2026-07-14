@@ -1,0 +1,37 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="ページ1" id="dmk9fr_3AwVEr6ZhD87v">
+    <mxGraphModel dx="815" dy="1896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VGqw30qd3x0evmYHa863-16" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;地域 `r(A)=r(B)=R,`　&lt;/span&gt;地域上限 `q_R`&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeWidth=3;verticalAlign=top;spacingTop=1;fontSize=28;fontStyle=1;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="130" y="-3" width="940" height="253" as="geometry" />
+        </mxCell>
+        <mxCell id="VGqw30qd3x0evmYHa863-1" value="目標上限 `q_A`" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="170" y="120" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VGqw30qd3x0evmYHa863-2" value="設置上限 `q_{A_{max}}`" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="170" y="80" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VGqw30qd3x0evmYHa863-3" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;大学Aの受入上限" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;strokeWidth=3;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="170" y="173" width="400" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VGqw30qd3x0evmYHa863-5" value="`q_{A_{max}}-q_A`" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="320" y="120" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VGqw30qd3x0evmYHa863-12" value="目標上限 `q_B`" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="620" y="120" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VGqw30qd3x0evmYHa863-13" value="設置上限 `q_{B_{max}}`" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="620" y="80" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VGqw30qd3x0evmYHa863-14" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;大学Bの受入上限" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;strokeWidth=3;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="620" y="173" width="400" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VGqw30qd3x0evmYHa863-15" value="`q_{B_{max}}-q_B`" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="770" y="120" width="250" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

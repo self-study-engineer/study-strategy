@@ -1,0 +1,41 @@
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+body .chap1 {
+  counter-reset: chapter 0;
+}
+
+body .chap2 {
+  counter-reset: chapter 1;
+}
+
+body .chap3 {
+  counter-reset: chapter 2;
+}
+
+body .chap4 {
+  counter-reset: chapter 3;
+}
+
+h1 {
+  counter-reset: sub-chapter;
+}
+
+h2 {
+  counter-reset: section;
+}
+
+h1::before {
+  counter-increment: chapter;
+  content: "第" counter(chapter) "章 ";
+}
+
+h2::before {
+  counter-increment: sub-chapter;
+  content: counter(chapter) "." counter(sub-chapter) " ";
+}
+
+h3::before {
+  counter-increment: section;
+  content: counter(chapter) "." counter(sub-chapter) "." counter(section) " ";
+}

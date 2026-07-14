@@ -1,0 +1,30 @@
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+h1 {
+  counter-reset: sub-chapter;
+}
+
+h2 {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: sub-chapter;
+  content: counter(sub-chapter) ". ";
+}
+
+h3::before {
+  counter-increment: section;
+  content: counter(sub-chapter) "-(" counter(section) ") ";
+}
+
+ol.brackets li {
+  font-family: 'Times New Roman', serif;
+  list-style-type: none;
+  counter-increment: cnt;
+}
+
+ol.brackets li:before {
+  content: "[ " counter(cnt) " ]　";
+}
