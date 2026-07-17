@@ -15,7 +15,9 @@
 
 <div style="page-break-before:always"></div>
 
-## <font color=red>リーダーシップのモデル</font>
+## 【準備】<font color=red>リーダーシップのモデル</font>
+
+#### モデリング
 
 - $n$人の同質的なメンバーから構成されるチームを考える。メンバー$j$の努力量を$e^j\geqq 0$とし、チームの生産性を表すパラメータ（確率変数）を$\theta$とする。この時、個々のメンバーには努力のコスト$d(e^j)$とチームの成果物（合計生産額）$V$を以下のように定義する。$$\begin{align*}
     【\text{チームの合計生産額}】&\quad V=\theta\sum_{i=1}^ne^i\\[3mm]
@@ -25,39 +27,65 @@
 - 上述の生産性$\theta$の値は1人のメンバーにだけ知らされるとし、そのメンバーを「**リーダー**」と呼び、リーダーは自分の努力量を決める前に$\theta$を知らされるとする。そして、リーダーに$\theta$の値が知らされることはチーム内での共有知識（common knowledge）であるとする。
 - メンバー$j$が$\theta$について抱いている信念（belief）、いわば予想値を$\theta^j$とする。メンバー$j$の効用$u_j$はチームの合計生産額のうちの自分の取り分の期待値から自分の努力量のコストを差し引いたものであり、下式のように表現できる。$$【\text{効用関数}】\quad u_j=\frac{1}{n}E\left[\left.V\;\right|\;\theta^j\right]-d(e^{j})=\frac{1}{n}E\left[\left.\theta\sum_{i=1}^ne^i\;\right|\;\theta^j\right]-\frac{e^{j^2}}{2}$$
 
-## チーム生産問題と最適な努力量
+<div style="page-break-before:always"></div>
+
+#### チーム生産問題と最適な努力量
 
 - メンバー$j$は努力量を次のように選択する。$$\begin{align*}
-    \max_{e^j}\;u_i&\iff\max_{e^j}\;\frac{\theta^j}{n}\left(e^j+\sum_{i\neq j}e^i\right)-\frac{e^{j^2}}{2}\\[5mm]
-    &\implies\frac{\partial u_j}{\partial e^j}=\frac{\theta^j}{n}\left(1+0\right)-\frac{2\times e^j}{2}=\frac{\theta^j}{n}-e^j=0\\[3mm]
-    &\qquad\underline{\therefore\;e^j=\frac{\theta^j}{n}(\;\equiv e(\theta^j)\;)}
-\end{align*}$$
+    \max_{e^j}\;u_i&=\max_{e^j}\;\left[\frac{\theta^j}{n}\left(e^j+\sum_{i\neq j}e^i\right)-\frac{e^{j^2}}{2}\right]\\[5mm]
+    &\implies\frac{\partial u_j}{\partial e^j}=\frac{\theta^j}{n}\left(1+0\right)-\frac{2\times e^j}{2}=\frac{\theta^j}{n}-e^j=0
+\end{align*}\\[3mm]
+【\text{個人の最適な努力量}】\quad\underline{\therefore\;e^j=\frac{\theta^j}{n}(\;\equiv e(\theta^j)\;)}$$
 - 上式のようにメンバー$j$が$\theta^j$を予想する時の自己にとって望ましい努力量である。ここから以下の洞察（結果）が得られる。
   - 【**結果1**】メンバー$j$（労働者$j$）にとって望ましい自己の努力量$e^j$は$\theta$の予想（$\theta^j$）が大きければ大きいほど大きくなる。つまり、$e(\theta^j)$が$\theta^j$の増加関数になっている。
   - 【**結果2**】各メンバーの努力量はチームの成果物（合計生産額）を最大化するファーストベストの場合の努力量よりも小さくなる。
 - 【**結果2**】は次の通り導出される。すべてのメンバーが$\theta$についての同じ予想 $\bar{\theta}$ を抱いているとすると、すべてのメンバーが努力量として$e(\bar{\theta})=\bar{\theta}/n$を選ぶ。これを踏まえて、ファーストベストは下式のように求められる。$$\begin{align*}
-    \max_{e^j}\;V-\sum_{i=1}^nd(e^i)&=\max\;\bar{\theta}\sum_{i=1}^ne^i-\sum_{i=1}^n\frac{e^{i^2}}{2}\\[5mm]
-    &=\max\;\bar{\theta}\left(e^j+\sum_{i\neq j}e^i\right)-\left(\frac{e^{j^2}}{2}+\sum_{i\neq j}\frac{e^{i^2}}{2}\right)\\[5mm]
-    &\Rightarrow\frac{\partial}{\partial e^j}\left(V-\sum_{i=1}^nd(e^i)\right)=\bar{\theta}-e^j=0\\[5mm]
-    &\therefore\quad \underline{e^j=\bar{\theta}(\;\equiv e^*(\bar{\theta})\;)}
-\end{align*}$$
-- 以上より、すべてのメンバーが$\theta$について同じ予想 $\bar{\theta}$ を抱いている場合の各メンバーの努力量 $\bar{\theta}/n$ はチームの成果物（合計生産額）を最大化するファーストベストの場合の各メンバーの努力量 $\bar{\theta}$ よりも小さくなることがわかる。自己の努力がまるまる自己に戻ってきて受け取れるのであれば、$\bar{\theta}$ の努力をするが成果はみんなで分かち合うので努力量が $\bar{\theta}/n$ に減少してしまうのである。経済学でいう古典的な「**チーム生産問題（フリーライド問題）**」が生じている。
+    \max_{e^j}\;\left[V-\sum_{i=1}^nd(e^i)\right]&=\max\;\left[\bar{\theta}\sum_{i=1}^ne^i-\sum_{i=1}^n\frac{e^{i^2}}{2}\right]\\[5mm]
+    &=\max\;\left[\bar{\theta}\left(e^j+\sum_{i\neq j}e^i\right)-\left(\frac{e^{j^2}}{2}+\sum_{i\neq j}\frac{e^{i^2}}{2}\right)\right]\\[5mm]
+    &\Rightarrow\frac{\partial}{\partial e^j}\left(V-\sum_{i=1}^nd(e^i)\right)=\bar{\theta}-e^j=0
+\end{align*}\\[5mm]
+【\text{チーム全体の最適な努力量}】\therefore\quad\underline{e^j=\bar{\theta}(\;\equiv e^*(\bar{\theta})\;)}$$
+- 以上より、<font color=red>自己の努力がまるまる受け取れるのであれば、各メンバーは $e^j=\bar{\theta}$ の努力をするが「成果はみんなで分かち合う」ので努力量が $e^j=\bar{\theta}/n$ に減少してしまう</font>。経済学でいう古典的な「**チーム生産問題（フリーライド問題）**」が生じている。
+
+<div style="page-break-before:always"></div>
 
 ## 情報が1人の人間には知らされる場合<span style="font-size: 24px;">〜「リーダー」が存在する場合〜</span>
 
-- 
+<img src="images/14-2.png" width=75%>
 
-<div style="page-break-before:always"></div>
+- 以上の準備の上で以下、本題のリーダーシップの経済学の検討、すなわち「**生産性を表すパラメータ $\theta$ の値がリーダーだけ（1人だけ）知らされる場合**」を考える。リーダー割り当てからメンバーの努力量選択までの具体的な流れは次のとおり。
+  1. メンバー（労働者）のうちの1人がリーダーとする。リーダーはメンバーらが自己の努力量$e^j$を選択する前に$\theta$の真の値を完全に知る（$\theta$について他のメンバーが知らない私的シグナル［$\text{private signal}$］を受け取る）。
+  2. リーダーは他のメンバーに対して$\theta$の値は$\hat{\theta}$であると知らせる。
+  3. リーダー以外のメンバーらは知らされた値をもとに自己の努力量$e(\hat{\theta})=\hat{\theta}/n$を選択する。
+- この時のリーダーの努力量を$e^L$とすると次の効用関数$u_L$を得る。$$u_L=\frac{\theta}{n}\left(e^L+\frac{n-1}{n}\hat{\theta}\right)-\frac{e^{L^2}}{2}$$上式から<font color=red>リーダーにとっては$\hat{\theta}$の値に比例して自身の効用$u_L$が高くなり、他のメンバーに大きな努力をさせることができるため、望ましいということがわかる</font>。このことからリーダーにとっては真の値$\theta$に関わらず、生産性が高いとアナウンスする、つまり「**一番高い$\theta$の値をアナウンスすることが常に望ましい**」ということになる。上記の内容を【**結果3**】として以下にまとめる。
+  - 【**結果3**】リーダーの効用$u_L$は$\hat{\theta}$の値の増加関数であるが故にリーダーは取りうる生産性$\theta$の値のうち、最大の生産性をメンバーに知らせるインセンティブがあり（すなわち、耐戦略性がない・戦略的に操作可能である）、ゆえに、他のメンバーはリーダーのアナウンスメントを単純に信用しない。このことから、<u>信用しないメンバーに対してリーダーは自分にとって何らかコストになる行為を行い、アナウンスメントが嘘でないことを伝えないといけない</u>。
+- 結果3を踏まえ、リーダーがとる「**何らかのコストになる行為**」について2つの方法を検討する。
+  - 【**アプローチ1**】リーダーの「**犠牲**」によるリード
+  - 【**アプローチ2**】リーダーの「**率先垂範**」によるリード
 
-## リーダーの犠牲によるリード
+#### リーダーの犠牲によるリード
 
-- 
+- 第一の方法はリーダーの「**犠牲**」によるリード（Leading by Sacrifice）と呼ばれる方法である。簡単化のため生産性が高い状態と低い状態の2つの状態だけがありうるとする。すなわち、$\theta\in\{\theta_0,\;\theta_1\},\quad\theta_0<\theta_1$ である。真の状態は生産性の低い状態$\theta_0$とする。従って、<font color=red>リーダーは「生産性は$\theta_1$である」とアナウンスするメリットがある（<b>嘘をつくインセンティブがある</b>）</font>。
+- この時、リーダーが正直に$\theta_0$をアナウンスして、メンバーたちがそれを信じたときのリーダーの効用を$u_L(\theta_0|\theta_0)$、リーダーが嘘をついて$\theta_1$をアナウンスして、メンバーたちがそれを信じたときのリーダーの効用を$u_L(\theta_1|\theta_0)$とすると、それぞれ次のように計算できる。$$\begin{align*}
+  u_L(\color{red}\theta_0\color{black}|\theta_0)&=\frac{\theta_0}{n}\left(\frac{\theta_0}{n}+\frac{n-1}{n}\color{red}\theta_0\color{black}\right)-\frac{\theta_0}{2}\\[3mm]
+  u_L(\color{blue}\theta_1\color{black}|\theta_0)&=\frac{\theta_0}{n}\left(\frac{\theta_0}{n}+\frac{n-1}{n}\color{blue}\theta_1\color{black}\right)-\frac{\theta_0}{2}
+\end{align*}\\[2mm]
+\underline{\theta_0<\theta_1\text{ より、}u_L(\color{red}\theta_0\color{black}|\theta_0)<u_L(\color{blue}\theta_1\color{black}|\theta_0)\text{ が成り立つ。}}$$上の結果から**リーダーは嘘をついて$\theta_1$をアナウンスするインセンティブがある**。
+- ここで、$t_L(\theta_1)\equiv u_L(\theta_1|\theta_0)-u_L(\theta_0|\theta_0)$ と定義する。そして次の結果4を示す。
+  - 【**結果4**】リーダーが嘘をついて$\theta_1$をアナウンスする時に限っては他のメンバーに対して合計で$t_L(\theta_1)$を支払う（「**犠牲**」を払う）ことに合意するならば、リーダーには嘘をつくインセンティブがなくなる。ちなみに他のメンバーはそれぞれ $\frac{t_L(\theta_1)}{n-1}$ を受け取ることになる。
+- ここでのリーダーの「**犠牲**」とは努力が大きな便益に結びつくと確信させるためにチームに見返りを約束するものであり、<u>例えば、**①大きなプロジェクトが終了したのちの長い休暇の約束**や**②プロジェクトで残業するメンバーへの食事の提供**、などがある</u>。
+- 念の為、真の生産性が$\theta_1$であるとき、リーダーは$t_L(\theta_1)$を支払ってでも正直に$\theta_1$とアナウンスするインセンティブがあるか$[\;u_L(\color{blue}\theta_1\color{black}|\theta_1)-u_L(\color{red}\theta_0\color{black}|\theta_1)>u_L(\color{blue}\theta_1\color{black}|\theta_0)-u_L(\color{red}\theta_0\color{black}|\theta_0)\;]$を確認する。$$\begin{align*}
+  u_L(\color{blue}\theta_1\color{black}|\theta_0)-u_L(\color{red}\theta_0\color{black}|\theta_0)&=\left[\frac{\theta_0}{n}\left(\frac{\theta_0}{n}+\frac{n-1}{n}\color{blue}\theta_1\color{black}\right)-\frac{\theta_0}{2}\right]-\left[\frac{\theta_0}{n}\left(\frac{\theta_0}{n}+\frac{n-1}{n}\color{red}\theta_0\color{black}\right)-\frac{\theta_0}{2}\right]\\
+  &=\frac{\theta_0}{n}\cdot\frac{n-1}{n}(\color{blue}\theta_1\color{black}-\color{red}\theta_0\color{black})\\[3mm]
+  u_L(\color{blue}\theta_1\color{black}|\theta_1)-u_L(\color{red}\theta_0\color{black}|\theta_1)&=\left[\frac{\theta_1}{n}\left(\frac{\theta_1}{n}+\frac{n-1}{n}\color{blue}\theta_1\color{black}\right)-\frac{\theta_1}{2}\right]-\left[\frac{\theta_1}{n}\left(\frac{\theta_1}{n}+\frac{n-1}{n}\color{red}\theta_0\color{black}\right)-\frac{\theta_1}{2}\right]\\
+  &=\underline{\frac{\theta_1}{n}\cdot\frac{n-1}{n}(\color{blue}\theta_1\color{black}-\color{red}\theta_0\color{black})>u_L(\color{blue}\theta_1\color{black}|\theta_0)-u_L(\color{red}\theta_0\color{black}|\theta_0)}
+\end{align*}$$
 
-<div style="page-break-before:always"></div>
+#### リーダーの率先垂範によるリード
 
-## リーダーの率先垂範によるリード
-
-- 
+- 第二の方法はリーダーの「**率先垂範**」によるリード（Leading by Example）と呼ばれる方法であり、この方法が$\text{Hermalin（1998）}$がメインテーマとして主張したケースである。ゲームのタイミング設定は次のとおり。
+  1. リーダーは他のメンバーが努力量を決める前に自己の努力量を選択する
+  2. 他のメンバー（フォロワー）はリーダーが決めた努力量を観察し、その後、各々の努力量を「**独立に、かつ、同時に**」選択する。
 
 <div style="page-break-before:always"></div>
 
