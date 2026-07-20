@@ -41,11 +41,122 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="nJopMHFepbTHMDh3cpX2" name="8-2_パレート最適性と個人合理性">
-    <mxGraphModel dx="512" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+  <diagram id="nJopMHFepbTHMDh3cpX2" name="3-1_垂直的な生産関係">
+    <mxGraphModel dx="2620" dy="1358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-1" value="非統合／アウトソーシング" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="60" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;" edge="1" parent="1" source="TeUksEL4ve9YaYWT0b-Z-3" target="TeUksEL4ve9YaYWT0b-Z-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-3" value="&lt;div&gt;`U`&lt;/div&gt;上流企業" style="ellipse;whiteSpace=wrap;html=1;fontSize=26;strokeWidth=3;container=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="-205" y="120" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-4" value="&lt;div&gt;`D`&lt;/div&gt;下流企業" style="ellipse;whiteSpace=wrap;html=1;fontSize=26;strokeWidth=3;container=0;fontColor=#3333FF;" vertex="1" parent="1">
+          <mxGeometry x="-205" y="482" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-5" value="&lt;div&gt;`D^&#39;`&lt;/div&gt;代替的な&lt;div&gt;下流企業&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=26;strokeWidth=3;dashed=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="482" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;" edge="1" parent="1" source="TeUksEL4ve9YaYWT0b-Z-6" target="TeUksEL4ve9YaYWT0b-Z-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-9" value="中間材の&lt;div&gt;所有権は`U`&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;dashed=1;align=left;fontSize=24;labelBackgroundColor=none;" edge="1" parent="1" source="TeUksEL4ve9YaYWT0b-Z-6" target="TeUksEL4ve9YaYWT0b-Z-5">
+          <mxGeometry x="0.486" y="53" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-6" value="`A`&lt;div&gt;物的資産&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=26;container=0;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="300" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-17" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeWidth=3;container=0;" vertex="1" parent="1">
+          <mxGeometry x="107" y="439" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-30" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=4;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-230" y="420" as="sourcePoint" />
+            <mxPoint x="70" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-27" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=4;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="120" as="sourcePoint" />
+            <mxPoint x="70" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-28" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=4;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-230" y="121" as="sourcePoint" />
+            <mxPoint x="-230" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-2" value="統合／雇用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;" edge="1" parent="1" source="TeUksEL4ve9YaYWT0b-Z-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-11" value="&lt;div&gt;`U`&lt;/div&gt;従業員" style="ellipse;whiteSpace=wrap;html=1;fontSize=26;strokeWidth=3;container=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="550" y="120" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-12" value="&lt;div&gt;`D`&lt;/div&gt;企業" style="ellipse;whiteSpace=wrap;html=1;fontSize=26;strokeWidth=3;container=0;fontColor=#3333FF;" vertex="1" parent="1">
+          <mxGeometry x="550" y="482" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-13" value="&lt;div&gt;`D^&#39;`&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=26;strokeWidth=3;dashed=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="905" y="482" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;" edge="1" parent="1" source="TeUksEL4ve9YaYWT0b-Z-16" target="TeUksEL4ve9YaYWT0b-Z-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-15" value="中間材の&lt;div&gt;所有権は`D`&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;dashed=1;align=left;fontSize=24;labelBackgroundColor=none;" edge="1" parent="1" source="TeUksEL4ve9YaYWT0b-Z-16" target="TeUksEL4ve9YaYWT0b-Z-13">
+          <mxGeometry x="0.5227" y="55" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-16" value="`A`" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=26;container=0;" vertex="1" parent="1">
+          <mxGeometry x="555" y="300" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-18" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="865" y="472" as="sourcePoint" />
+            <mxPoint x="912" y="455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-19" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="898" y="488" as="sourcePoint" />
+            <mxPoint x="880" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-34" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=4;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="827" y="286" as="sourcePoint" />
+            <mxPoint x="527" y="286" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-35" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=4;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="527" y="586" as="sourcePoint" />
+            <mxPoint x="527" y="286" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-36" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=4;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="827" y="585" as="sourcePoint" />
+            <mxPoint x="827" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-40" value="&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(255, 51, 51), rgb(255, 51, 51));&quot;&gt;`U`&lt;/font&gt;&lt;/b&gt;が資産を&lt;div&gt;所有しているケース&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="70" y="230" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TeUksEL4ve9YaYWT0b-Z-41" value="&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;&lt;b&gt;`D`&lt;/b&gt;&lt;/font&gt;が資産を&lt;div&gt;所有しているケース&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="827" y="280" width="240" height="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
