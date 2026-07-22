@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9" pages="2">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9" pages="3">
   <diagram name="8-1_利得分配の実現可能集合" id="m5M0_Rs2oUdmpzPtnAv4">
     <mxGraphModel dx="735" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -156,6 +156,138 @@
         </mxCell>
         <mxCell id="TeUksEL4ve9YaYWT0b-Z-41" value="&lt;font style=&quot;color: rgb(51, 51, 255);&quot;&gt;&lt;b&gt;`D`&lt;/b&gt;&lt;/font&gt;が資産を&lt;div&gt;所有しているケース&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;spacingLeft=10;" vertex="1" parent="1">
           <mxGeometry x="827" y="280" width="240" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="TxPc_ETX2rfSG8qt8--C" name="16-1と16-2">
+    <mxGraphModel dx="1084" dy="846" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-4" value="実行&lt;div&gt;（`s_1=G`）&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;labelBackgroundColor=none;verticalAlign=top;" edge="1" parent="1" source="Wg4hmhWXRtMM14vFBVJh-1" target="Wg4hmhWXRtMM14vFBVJh-2">
+          <mxGeometry x="0.0051" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-1" value="ユニット1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="59" y="210" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-2" value="ユニット2" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="360" y="210" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-5" value="&lt;span style=&quot;&quot;&gt;実行&lt;/span&gt;&lt;div style=&quot;&quot;&gt;（`s_2=G`）&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;labelBackgroundColor=none;verticalAlign=top;" edge="1" parent="1" source="Wg4hmhWXRtMM14vFBVJh-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="240" as="sourcePoint" />
+            <mxPoint x="640" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-6" value="中止（`s_1=B`）" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;" edge="1" parent="1" source="Wg4hmhWXRtMM14vFBVJh-1">
+          <mxGeometry x="1" y="20" relative="1" as="geometry">
+            <mxPoint x="389" y="300" as="sourcePoint" />
+            <mxPoint x="144" y="330" as="targetPoint" />
+            <mxPoint x="-20" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-9" value="中止（`s_2=B`）" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;" edge="1" parent="1" source="Wg4hmhWXRtMM14vFBVJh-2">
+          <mxGeometry x="1" y="20" relative="1" as="geometry">
+            <mxPoint x="480" y="270" as="sourcePoint" />
+            <mxPoint x="445" y="330" as="targetPoint" />
+            <mxPoint x="-20" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-27" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1020" y="40" width="780" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-22" value="ポリアルキー" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=32;" vertex="1" parent="Wg4hmhWXRtMM14vFBVJh-27">
+          <mxGeometry y="10" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-23" value="&lt;b&gt;満場一致の反対&lt;/b&gt;で&lt;b&gt;中止&lt;/b&gt;したい場合に有用&lt;div&gt;（シグナルが混合してもプロジェクトを採択する）&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;" vertex="1" parent="Wg4hmhWXRtMM14vFBVJh-27">
+          <mxGeometry x="210" width="570" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-31" value="【入力】`s_2`" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;" edge="1" parent="1" target="Wg4hmhWXRtMM14vFBVJh-2">
+          <mxGeometry x="-1" y="20" relative="1" as="geometry">
+            <mxPoint x="445" y="160" as="sourcePoint" />
+            <mxPoint x="444.7" y="210" as="targetPoint" />
+            <mxPoint x="-20" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-32" value="⚫︎ ⚫︎ ⚫︎" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="650" y="220" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-33" value="【入力】`s_1`" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;" edge="1" parent="1" target="Wg4hmhWXRtMM14vFBVJh-1">
+          <mxGeometry x="-1" y="20" relative="1" as="geometry">
+            <mxPoint x="143.88" y="160" as="sourcePoint" />
+            <mxPoint x="143.88" y="210" as="targetPoint" />
+            <mxPoint x="-20" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-34" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="60" y="53" width="810" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-10" value="ヒエラルキー" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=32;" vertex="1" parent="Wg4hmhWXRtMM14vFBVJh-34">
+          <mxGeometry y="10" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-19" value="&lt;b&gt;満場一致の賛成&lt;/b&gt;で&lt;b&gt;実行&lt;/b&gt;したい場合に有用&lt;div&gt;（シグナルが混合したらプロジェクトを採択しない）&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;" vertex="1" parent="Wg4hmhWXRtMM14vFBVJh-34">
+          <mxGeometry x="210" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-36" value="【入力】`s_1`" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;" edge="1" parent="1" target="Wg4hmhWXRtMM14vFBVJh-12">
+          <mxGeometry x="-1" y="-60" relative="1" as="geometry">
+            <mxPoint x="1120" y="140" as="sourcePoint" />
+            <mxPoint x="1050.12" y="220" as="targetPoint" />
+            <mxPoint x="-59" y="-60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-37" value="【入力】`s_2`" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;" edge="1" parent="1" target="Wg4hmhWXRtMM14vFBVJh-13">
+          <mxGeometry x="-1" y="-60" relative="1" as="geometry">
+            <mxPoint x="1120" y="340" as="sourcePoint" />
+            <mxPoint x="1190" y="340" as="targetPoint" />
+            <mxPoint x="-59" y="-60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-11" value="中止&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(`s_1=B`)&lt;/span&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;align=right;labelBackgroundColor=none;spacingRight=5;" edge="1" parent="1" target="Wg4hmhWXRtMM14vFBVJh-13">
+          <mxGeometry x="-0.4286" relative="1" as="geometry">
+            <mxPoint x="1230" y="170" as="sourcePoint" />
+            <mxPoint x="1230" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1230" y="270" />
+              <mxPoint x="1230" y="270" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-12" value="ユニット1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="110" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-13" value="ユニット2" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="310" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-15" value="実行" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Wg4hmhWXRtMM14vFBVJh-12" target="Wg4hmhWXRtMM14vFBVJh-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1390" y="140" as="sourcePoint" />
+            <mxPoint x="1530" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-24" value="実行" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Wg4hmhWXRtMM14vFBVJh-13" target="Wg4hmhWXRtMM14vFBVJh-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="310" as="sourcePoint" />
+            <mxPoint x="1565" y="230" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-14" value="センター" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="200" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg4hmhWXRtMM14vFBVJh-25" value="中止&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(`s_2=B`)&lt;/span&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;endSize=10;fontSize=24;align=left;labelBackgroundColor=none;spacingLeft=5;" edge="1" parent="1" source="Wg4hmhWXRtMM14vFBVJh-13">
+          <mxGeometry x="-0.2727" relative="1" as="geometry">
+            <mxPoint x="1320" y="280" as="sourcePoint" />
+            <mxPoint x="1320" y="170" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1320" y="270" />
+              <mxPoint x="1320" y="270" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
