@@ -73,12 +73,22 @@ $$\begin{align*}
 
 > 【**定理11.1**】
 > $(U,d)$を$n$人交渉問題とする。利得ベクトル$x^*\in U$が$(U,d)$のナッシュ交渉会であるための必要十分条件は、ある$\lambda\geqq 0$とプレイヤー $i$ の重み $\theta_i$ が存在して、以下が成り立つことである。$$\begin{align}
->   &\frac{\theta_i}{x_i^*-d_i}+\lambda\frac{\partial H}{\partial x_i}(x^*)=0,\quad i\in N\\[4mm]
+>   &\frac{\theta_i}{x_i^*-d_i}+\lambda\frac{\partial H}{\partial x_i}(x^*)=0,\quad i\in N\\[3mm]
 >   &H(x^*)=0
 > \end{align}$$
 > 
 > 【**証明**】
-> 
+> 式$(1)$の条件付き最大化問題は次のように書き換えられる。$$\begin{align*}
+>   \max_{x\in U}&\sum_{i=1}^n\theta_i\log(x_i-d_i)\\[4mm]
+>   \text{s.t.}&\quad\text{(a)}\quad H(x_1,\cdots,x_n)\geqq0\\[1mm]
+>   &\quad\text{(b)}\quad x_i\geqq d_i,\quad i\in N
+> \end{align*}
+> $$定義11.1の3つ目の仮定より、最大解 $x^*$ は $H(x^*)=0$ で全ての $i$ で $x^*_i>d_i$を満たす。ラグランジュ関数$$V(x,\lambda)=\sum_{i=1}^n\theta_i\log(x_i-d_i)+\lambda H(x_1,\cdots,x_n)$$を作ると仮定11.1より、$x^*$が条件付き最大化問題の最適解であるための必要十分条件は次のクーン＝タッカー条件$$\begin{align*}
+>   \frac{\partial V}{\partial x_i}(x^*,\;\lambda)&=0\\[3mm]
+>   H(x^*)&=0
+> \end{align*}$$が成り立つことである。ゆえに定理11.1の2式が成立する。$\blacksquare$
+
+- 定理11.1の証明について、クーン＝タッカー条件について軽く説明する。$\lambda$ は条件付き最大化問題で登場した制約式$(a)$に対応するラグランジュ乗数である。クーン＝タッカー条件に馴染みのない読者は制約式$(a)$の不等式を等式で置き換え、等式制約条件付き最大化問題の最適条件を求めても良い。定理11.1の1つ目の式より$$\frac{(x^*_j-d_j)/\theta_j}{(x^*_i-d_i)/\theta_i}=\frac{\partial H/\partial x_i}{\partial H/\partial x_j}=-\frac{\partial x_j}{\partial x_i}$$が成り立つ。この式の右辺は実現可能集合のパレート境界上での偏微分を表し、ナッシュ交渉会では重みで調整した2人のプレイヤーの効用差の比がパレート境界での接線の傾きと（符号を除いて）等しいことがわかる。
 
 #### 【例】利得1の分配交渉
 
