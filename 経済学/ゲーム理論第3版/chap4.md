@@ -46,6 +46,8 @@
 > 【**証明**】
 > 
 
+<div style="page-break-before:always"></div>
+
 ## 最適化原理と逐次均衡点
 
 - 
@@ -86,6 +88,8 @@
 > 1. 信念$\rho^*$は行動戦略の組$b^*$のプレイ上のすべての情報集合に$b^*$からベイズ公式で導かれる予想を対応させるが、$b^*$のプレイ外のすべての情報集合にはいかなる予想を対応させても良い。
 > 2. すべてのプレイヤー$i$の各情報集合$u\in U_i$に対して以下が成り立つ。$$H_{i,u}(b^*\;|\;\rho^*)=\max_{b_{i}\in B_{i}}\;H_{i,u}(b_{i},b_{-i}^*\;|\;\rho^*)$$
 
+<div style="page-break-before:always"></div>
+
 ## 存在定理
 
 - 
@@ -122,6 +126,8 @@
 > 【**証明**】
 > 
 
+<div style="page-break-before:always"></div>
+
 ## 完全均衡点と逐次均衡点の計算例
 
 ### 完全均衡点の計算方法
@@ -132,45 +138,59 @@
 
 - 
 
+<div style="page-break-before:always"></div>
+
 ## 戦略の支配と安定性
 
 - 
 
 > 【**定義4.7**】
-> 
+> 正数$\varepsilon$に対して戦略形ゲーム$G=(N,\{Q_i\}_{i\in N},\{F_i\}_{i\in N})$の混合戦略の組$q=(q_1,\cdots,q_n)$が **$\varepsilon-$完全均衡点である**とはすべてのプレイヤー$i$の2つの純戦略$s_i$と$s'_i$に対して以下が成り立つ時をいう。$$F_i(s'_i,q_{-i})>F_i(s_i,q_{-i})\implies q_i(s_i)\leqq\varepsilon$$
 
 > 【**定理4.11**】
-> 
+> 戦略形ゲーム$G$の混合戦略の組$q^*=(q_1^*,\cdots,q_n^*)$に対して次の3つの条件は同値である。$$\begin{align*}
+>     (1)\quad&q^*\text{はゲーム}G\text{の完全均衡点である。}\\
+>     (2)\quad&0\text{に収束する数列}\{\varepsilon^k\}_{k=1}^{\infty}\text{と}G\text{の}\varepsilon^k\text{-完全均衡点}q^k\text{が存在して、}\\&q^k\rightarrow q^*\;(k\rightarrow\infty)である。\\
+>     (3)\quad&\text{完全に確率的な混合戦略の組の列}\{q^k=(q_1^k,\cdots,q_n^k)\}_{k=1}^{\infty}が存在して\\&次が成立する。\\&\begin{align*}
+>       (\text{i})\quad&\text{すべての}i\text{に対して}q_i^*\text{は各}q^k\text{に対する最適応答である。}\\
+>       (\text{ii})\quad&q^k\rightarrow q^*\quad (k\rightarrow\infty)
+>   \end{align*}
+> \end{align*}$$
 >
 > 【**証明**】
 > 
 
 > 【**定義4.8**】
-> 
+> プレイヤー$i$ の2つの混合戦略$q_i$と$q'_i$に対して、$q_i$が$q'_i$を**弱支配する**とは他のプレイヤーの全ての混合戦略の組$q_{-i}=(q_1,\cdots,q_{i-1},q_{i+1},\cdots,q_n)$に対して、以下が成立し、少なくとも1つの$q_{-i}$に対して上式が強い不等式で成立することである。$$F_i(q_i,q_{-i})\geqq F_i(q'_i,q_{-i})$$ゲーム$G$の均衡点$q^*=(q_1^*,\cdots,q_n^*)$が**支配されない（$\text{undominated}$）** とは全てのプレイヤー$i$の均衡戦略$q_i^*$が他の戦略に弱支配されない時をいう。
 
 > 【**定理4.12**】
-> 
+> 戦略形ゲーム$G$の完全均衡点$q^*=(q_1^*,\cdots,q_n^*)$は支配されない均衡点である。
 >
 > 【**証明**】
 > 
 
 > 【**定理4.13**】
-> 
+> 戦略形2人ゲーム$G=(Q_1,Q_2,F_1,F_2)$において混合戦略の組$q^*=(q_1^*,q_2^*)$が完全均衡点であるための必要十分条件は$q^*$が支配されない均衡点であることである。
 >
 > 【**証明**】
 > 
 
 > 【**定義4.9**】
-> 
+> 展開形ゲーム$\Gamma$の行動戦略の組$b^*=(b_1^*,\cdots,b_n^*)$が**強完全均衡点（$\text{strictly perfect equilibrium point}$）である**とは $\Gamma$のすべての枝$c$に対して $\eta_c^k\rightarrow 0\;(k\rightarrow\infty)$ であるすべての変動ゲーム列$\{(\Gamma,\eta^k)\}_{k=1}^{\infty}$に対して、$\hat{\Gamma}^k$ の均衡点 $b^k$が存在して$b^k\rightarrow b^*\;(k\rightarrow\infty)$ が成り立つ時をいう。
 
 > 【**定義4.10**】
-> 
+> 戦略形ゲーム$G$における均衡点$q^*=(q_1^*,\cdots,q_n^*)$が**強い均衡点（$\text{strict equilibrium point}$）である**とはすべてのプレイヤー$i$に対して以下が成立する時をいう。$$F_i(q^*)>F_i(q_i,q_{-i}),\quad\forall q_i\in Q_i,\quad q_i\neq q_i^*$$
 
-> 【**定理4.13**】
-> 
+> 【**定理4.14**】
+> 戦略形ゲーム$G$の均衡点 $q^*=(q_1^*,\cdots,q_n^*)$ が次の3つの条件のうち少なくとも1つを満たせば、強完全均衡点である。
+> 1. $q^*$はゲーム$G$の唯一の均衡点である。
+> 2. すべてのプレイヤー$i$に対して$q_i^*$はすべての純戦略$s_i\in S_i$に対して正の確率を付与する。
+> 3. $q^*$はゲーム$G$の強い均衡点である。
 >
 > 【**証明**】
 > 
+
+<div style="page-break-before:always"></div>
 
 ## 応用例
 
