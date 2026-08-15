@@ -29,6 +29,8 @@
 > 【**定義5.3**】
 > 情報不完備ゲーム$G^*=(N,\{S_i,C_i,f_i,p_i\}_{i\in N})$ の**ベイジアンゲーム（$\text{Bayesian game}$）** とは、以下の組$$G^{**}=(N,\{S_i,C_i,f_i\}_{i\in N},p)$$で定義される。ここで、$p$はプレイヤーのタイプ変数の直積集合$C_1\times\cdots\times C_n$上の確率分布で、定義5.2の整合性の条件を満たす。
 
+<div style="page-break-before:always"></div>
+
 ## ベイジアン均衡点
 
 - 
@@ -49,6 +51,8 @@
 
 - 
 
+<div style="page-break-before:always"></div>
+
 ## 情報構造と知識
 
 - 
@@ -67,6 +71,8 @@
 
 > 【**定義5.8**】
 > 事象$E$が状態$\omega\in\Omega$においてプレイヤー$1,\cdots,n$の**共有知識である**とは任意の自然数$k$と任意のプレイヤー列$(i_1,\cdots,i_k)$に対して以下が成り立つ時をいう。$$\omega\in K_{i_1},\cdots,K_{i_k}(E)$$
+
+<div style="page-break-before:always"></div>
 
 ## 相関均衡点
 
@@ -106,6 +112,8 @@
 > 【**証明**】
 > 
 
+<div style="page-break-before:always"></div>
+
 ## メカニズムの顕示原理
 
 - 
@@ -136,6 +144,8 @@
 >
 > 【**証明**】
 > 
+
+<div style="page-break-before:always"></div>
 
 ## 応用例
 

@@ -14,6 +14,8 @@
 
 - 
 
+<div style="page-break-before:always"></div>
+
 ## 戦略の概念と均衡点
 
 - 
@@ -52,6 +54,8 @@
 > 【**証明**】
 > 
 
+<div style="page-break-before:always"></div>
+
 ## 完全情報ゲーム
 
 - 
@@ -68,6 +72,8 @@
 #### 【例】レディーファースト（女性優先）のルール
 
 - 
+
+<div style="page-break-before:always"></div>
 
 ## 完全記憶ゲーム
 
@@ -113,6 +119,8 @@
 > 【**証明**】
 > 
 
+<div style="page-break-before:always"></div>
+
 ## 情報のインフレーション
 
 - 
@@ -149,6 +157,8 @@
 >
 > 【**証明**】
 > 
+
+<div style="page-break-before:always"></div>
 
 ## 応用例
 
