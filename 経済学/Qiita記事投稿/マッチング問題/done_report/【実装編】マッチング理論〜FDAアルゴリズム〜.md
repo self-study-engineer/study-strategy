@@ -6,11 +6,11 @@
 前回はDAアルゴリズムを紹介しました。その中で安定性を満たすことがDAアルゴリズムの特徴であることを説明し、Pythonのソースコードとその動作確認を行いました。本記事では安定性を弱めた「弱安定性」と呼ばれる性質を説明し、制約付きマッチング問題の解決方法としてFDAアルゴリズムを紹介します。
 
 - 【**想定する読者**】マッチング理論の初学者エンジニア
-- [【理論編】マッチング理論](https://qiita.com/_it_/items/1cdd9059282cb774f8cc)
+- [【理論編】マッチング理論 〜マッチング問題の共有知識〜](https://qiita.com/_it_/items/1cdd9059282cb774f8cc)
 - [【実装編】DAアルゴリズム](https://qiita.com/_it_/items/fc3d58a337d2eb6f2408)
 - [【実装編】FDAアルゴリズム](https://qiita.com/_it_/items/0b30fe9acdb55c7e8897) ← 今回はここ！
 - [【実装編】CAアルゴリズム](https://qiita.com/_it_/items/75f1f63e3d57a3de4aaf)
-- [サンプルコード](https://github.com/itokohei0/MarketDesignStudy/tree/master/%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E7%90%86%E8%AB%96)
+- [サンプルコード](https://github.com/itokohei0/MarketDesignStudy/tree/master/%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E7%90%86%E8%AB%96/%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E5%95%8F%E9%A1%8C)
 
 FDAアルゴリズム（Flexible Deferred Acceptance / 柔軟な受入保留方式）は**地域上限制約のもとで弱安定マッチングを求めるアルゴリズム**です。
 
@@ -145,10 +145,10 @@ class Input:
     proposer_prefs: list[list[int]]
     receiver_prefs: list[list[int]]
     capacities:     list[int]
-+   max_caps:         list[int]            # ← 【追加】受入者 j の設置上限（物理的な最大）
-+   regions:          list[int]            # ← 【追加】受入者 j が属する地域
-+   regional_caps:    list[int]            # ← 【追加】地域 r の上限
-+   nomination_order: list[int]            # ← 【追加】待機リストフェーズでの受入者の指名順序
+    max_caps:         list[int]            # ← 【追加】受入者 j の設置上限（物理的な最大）
+    regions:          list[int]            # ← 【追加】受入者 j が属する地域
+    regional_caps:    list[int]            # ← 【追加】地域 r の上限
+    nomination_order: list[int]            # ← 【追加】待機リストフェーズでの受入者の指名順序
     proposer_names: list[str] | None = None
     receiver_names: list[str] | None = None
 
@@ -181,6 +181,9 @@ class Result:
 def flexible_deferred_acceptance(data: Input, verbose: bool = True) -> Result:
     """
     FDA アルゴリズムを実行し、弱安定マッチングを返す。
+
+    待機リストフェーズは Kamada and Kojima (2015) および教科書第4章の定義どおり、
+    指名順序に従って各受入者が「1人ずつ」指名する処理を繰り返す（輪番方式）。
     """
     P = data.n_proposers
     R = data.n_receivers
@@ -225,9 +228,21 @@ def flexible_deferred_acceptance(data: Input, verbose: bool = True) -> Result:
             if not proposals[r]:
                 continue
 
+            # 受入者の選好リストに載っていない提案者は「受け入れ不可能」として即時拒否
+            newcomers = []
+            for p in proposals[r]:
+                if r_rank[r][p] >= P:
+                    free.add(p)
+                    if verbose:
+                        print(f"    {data.r_name(r)}: {data.p_name(p)} は受け入れ不可能 → 拒否")
+                else:
+                    newcomers.append(p)
+            if not newcomers:
+                continue
+
             # 現在の仮受入者 + 新しい提案者を優先順位順にソート
             candidates = sorted(
-                receiver_match[r] + proposals[r],
+                receiver_match[r] + newcomers,
                 key=lambda p: r_rank[r][p],
             )
             keep     = candidates[:data.capacities[r]]   # 定員分だけキープ
@@ -258,7 +273,10 @@ def flexible_deferred_acceptance(data: Input, verbose: bool = True) -> Result:
                     rej_str = ", ".join(data.p_name(p) for p in rejected_by_cap)
                     print(f"      → 設置上限（{data.max_caps[r]}人）により拒否: [{rej_str}]")
 
-        # (b-2) 待機リストフェーズ
+        # (b-2) 待機リストフェーズ（輪番方式）
+        # 指名順序に従って各受入者が待機リストから最優先の提案者を「1人ずつ」指名し、
+        # これを繰り返す。地域上限が満員になるか、指名できる受入者がいなくなるまで
+        # 順序に従って繰り返し1人ずつ指名していく（第4章の定義どおり）。
         if verbose:
             print(f"\n  【待機リストフェーズ】")
 
@@ -268,39 +286,44 @@ def flexible_deferred_acceptance(data: Input, verbose: bool = True) -> Result:
             for p in matched:
                 regional_count[data.regions[r]] += 1
 
-        for r in data.nomination_order:
-            region = data.regions[r]
-            release_reason = None
-            while wait_list[r]:
+        while True:
+            any_nominated = False
+            for r in data.nomination_order:
+                if not wait_list[r]:
+                    continue
+                region = data.regions[r]
                 # 地域上限チェック
                 if regional_count[region] >= data.regional_caps[region]:
-                    release_reason = f"地域上限（{data.regional_caps[region]}人）により拒否"
-                    if verbose:
-                        print(f"    {data.r_name(r)}: を受入なし")
-                    break
+                    continue
                 # 設置上限チェック
                 if len(receiver_match[r]) >= data.max_caps[r]:
-                    release_reason = f"設置上限（{data.max_caps[r]}人）により拒否"
-                    if verbose:
-                        print(f"    {data.r_name(r)}: を受入なし")
-                    break
-                # 待機リストから最優先の提案者を1人受入
+                    continue
+                # 待機リストから最優先の提案者を「1人だけ」指名し、次の受入者へ
                 best = min(wait_list[r], key=lambda p: r_rank[r][p])
                 wait_list[r].remove(best)
                 receiver_match[r].append(best)
                 proposer_match[best] = r
                 regional_count[region] += 1
+                any_nominated = True
                 if verbose:
                     print(f"    {data.r_name(r)}: {data.p_name(best)} を受入"
                           f"（地域{region}: {regional_count[region]}"
                           f"/{data.regional_caps[region]}）")
+            if not any_nominated:
+                break  # この周回で誰も指名できなかった → 待機リストフェーズ終了
 
-            # 上限を超えて受入拒否された参加者の情報を出力
-            if verbose and wait_list[r] and release_reason:
+        # 指名されずに残った待機リストの提案者は拒否し、次のステップへ
+        for r in range(R):
+            if not wait_list[r]:
+                continue
+            if verbose:
+                region = data.regions[r]
+                if regional_count[region] >= data.regional_caps[region]:
+                    reason = f"地域上限（{data.regional_caps[region]}人）"
+                else:
+                    reason = f"設置上限（{data.max_caps[r]}人）"
                 rel_str = ", ".join(data.p_name(p) for p in wait_list[r])
-                print(f"      → {release_reason}: [{rel_str}]")
-
-            # 残った待機リストの提案者は次のステップへ
+                print(f"      → {data.r_name(r)}: {reason}により拒否: [{rel_str}]")
             for p in wait_list[r]:
                 free.add(p)
             wait_list[r] = []
@@ -533,17 +556,17 @@ result = flexible_deferred_acceptance(data)
 
 **実行トレース**
 
-| ステップ | フェーズ         | 内容                                                                                                                                                                                                                                                                                                                                | 拒否（フリーへ）                    |
-| -------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| 1        | (a) 提案         | ◼田中・鈴木・佐藤 → 営業1課<br>◼高橋・渡辺・伊藤・山本・中村 → 基幹システム課<br>◼加藤・吉田・山田・佐々木・松本 → 製品開発課<br>◼井上・木村・中山 → 経営企画課<br>◼林 → 商品企画課  ◼清水 → マーケティング課                                                                                                                       | —                                   |
-| 1        | (b-1) レギュラー | ◼営業1課:キープ=[田中,鈴木]（定員2）待機=[佐藤]<br>◼基幹システム課:キープ=[高橋,渡辺,伊藤,山本]（**定員4**）待機=[中村]<br>◼製品開発課:キープ=[加藤,吉田,山田,佐々木]（**定員4**）待機=[松本]<br>◼経営企画課:キープ=[井上,木村]（定員2）待機=[中山]<br>◼商品企画課:キープ=[林]（定員1）<br>◼マーケティング課:キープ=[清水]（定員1） | —                                   |
-| 1        | (b-2) 待機リスト | ◼営業1課: 佐藤を受入（$\alpha$：3/3）<br>◼経営企画課: 中山を受入（γ: 5/7）<br>◼基幹・製品開発: キープ合計=**4+4=8=地域$\beta$上限** → 待機リスト処理前に地域β満杯 → **中村・松本を解放**                                                                                                                                            | 中村・松本（地域$\beta$満杯のため） |
-| 2        | (a) 提案         | ◼中村 → 商品企画課（第2志望）<br>◼松本 → 商品企画課（第2志望）                                                                                                                                                                                                                                                                      | —                                   |
-| 2        | (b-1) レギュラー | ◼商品企画課: 候補=[林,中村,松本]→キープ=[林]（定員1）<br>　松本は設置上限（1+1=2）に阻まれ即時拒否、中村は待機リストへ                                                                                                                                                                                                              | 松本                                |
-| 2        | (b-2) 待機リスト | ◼商品企画課: 中村を受入（$\gamma$：6/7）                                                                                                                                                                                                                                                                                            | —                                   |
-| 3        | (a) 提案         | ◼松本 → マーケティング課（第3志望）                                                                                                                                                                                                                                                                                                 | —                                   |
-| 3        | (b-1) レギュラー | ◼マーケティング課:キープ=[清水]（定員1）待機=[松本]                                                                                                                                                                                                                                                                                 | —                                   |
-| 3        | (b-2) 待機リスト | ◼マーケティング課: 松本を受入（**$\gamma$：7/7 満杯**）→ **全員マッチ**                                                                                                                                                                                                                                                             | —                                   |
+| ステップ | フェーズ         | 内容                                                                                                                                                                                                                                                                                                                                | 拒否（フリーへ）              |
+| -------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| 1        | (a) 提案         | ◼田中・鈴木・佐藤 → 営業1課<br>◼高橋・渡辺・伊藤・山本・中村 → 基幹システム課<br>◼加藤・吉田・山田・佐々木・松本 → 製品開発課<br>◼井上・木村・中山 → 経営企画課<br>◼林 → 商品企画課  ◼清水 → マーケティング課                                                                                                                       | —                             |
+| 1        | (b-1) レギュラー | ◼営業1課:キープ=[田中,鈴木]（定員2）待機=[佐藤]<br>◼基幹システム課:キープ=[高橋,渡辺,伊藤,山本]（**定員4**）待機=[中村]<br>◼製品開発課:キープ=[加藤,吉田,山田,佐々木]（**定員4**）待機=[松本]<br>◼経営企画課:キープ=[井上,木村]（定員2）待機=[中山]<br>◼商品企画課:キープ=[林]（定員1）<br>◼マーケティング課:キープ=[清水]（定員1） | —                             |
+| 1        | (b-2) 待機リスト | ◼営業1課: 佐藤を受入（$\alpha$：3/3）<br>◼経営企画課: 中山を受入（γ: 5/7）<br>◼基幹・製品開発: キープ合計=**4+4=8=地域$\beta$上限** → 待機リスト処理前に地域β満杯 → **中村・松本を解放**                                                                                                                                                         | 中村・松本（地域$\beta$満杯のため） |
+| 2        | (a) 提案         | ◼中村 → 商品企画課（第2志望）<br>◼松本 → 商品企画課（第2志望）                                                                                                                                                                                                                                                                      | —                             |
+| 2        | (b-1) レギュラー | ◼商品企画課: 候補=[林,中村,松本]→キープ=[林]（定員1）<br>　松本は設置上限（1+1=2）に阻まれ即時拒否、中村は待機リストへ                                                                                                                                                                                                              | 松本                          |
+| 2        | (b-2) 待機リスト | ◼商品企画課: 中村を受入（$\gamma$：6/7）                                                                                                                                                                                                                                                                                                   | —                             |
+| 3        | (a) 提案         | ◼松本 → マーケティング課（第3志望）                                                                                                                                                                                                                                                                                                 | —                             |
+| 3        | (b-1) レギュラー | ◼マーケティング課:キープ=[清水]（定員1）待機=[松本]                                                                                                                                                                                                                                                                                 | —                             |
+| 3        | (b-2) 待機リスト | ◼マーケティング課: 松本を受入（**$\gamma$：7/7 満杯**）→ **全員マッチ**                                                                                                                                                                                                                                                                    | —                             |
 
 ```bash
 ...

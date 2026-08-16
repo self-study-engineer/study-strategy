@@ -8,11 +8,11 @@
 興味がある方はぜひ読んでみてください。
 
 - 【**想定する読者**】マッチング理論の初学者エンジニア
-- [【理論編】マッチング理論](https://qiita.com/_it_/items/1cdd9059282cb774f8cc)
+- [【理論編】マッチング理論 〜マッチング問題の共有知識〜](https://qiita.com/_it_/items/1cdd9059282cb774f8cc)
 - [【実装編】DAアルゴリズム](https://qiita.com/_it_/items/fc3d58a337d2eb6f2408) ← 今回はここ！
 - [【実装編】FDAアルゴリズム](https://qiita.com/_it_/items/0b30fe9acdb55c7e8897)
 - [【実装編】CAアルゴリズム](https://qiita.com/_it_/items/75f1f63e3d57a3de4aaf)
-- [サンプルコード](https://github.com/itokohei0/MarketDesignStudy/tree/master/%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E7%90%86%E8%AB%96)
+- [サンプルコード](https://github.com/itokohei0/MarketDesignStudy/tree/master/%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E7%90%86%E8%AB%96/%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E5%95%8F%E9%A1%8C)
 
 DAアルゴリズム（Deferred Acceptance Algorithm / 受入保留方式）は、Gale と Shapley が1962年に提案した**安定マッチングを求めるアルゴリズム**です。本記事は最もシンプルな設定であるDAアルゴリズムを実装します。この記事が後続のFDA・CA アルゴリズムを理解するための土台となります。
 
@@ -283,9 +283,21 @@ def deferred_acceptance(data: Input, verbose: bool = True) -> Result:
             if not proposals[r]:
                 continue
 
+            # 受入者の選好リストに載っていない提案者は「受け入れ不可能」として即時拒否
+            newcomers = []
+            for p in proposals[r]:
+                if r_rank[r][p] >= P:
+                    free.add(p)
+                    if verbose:
+                        print(f"    {data.r_name(r)}: {data.p_name(p)} は受け入れ不可能 → 拒否")
+                else:
+                    newcomers.append(p)
+            if not newcomers:
+                continue
+
             # 現在の仮受入者 + 新しい提案者を優先順位順にソート
             candidates = sorted(
-                receiver_match[r] + proposals[r],
+                receiver_match[r] + newcomers,
                 key=lambda p: r_rank[r][p],
             )
             keep     = candidates[:data.capacities[r]]   # 定員分だけキープ
