@@ -149,6 +149,61 @@ def subrow(
 
 
 # ─────────────────────────────────────────────
+# 拡張PSとの接続（アダプタ）
+# ─────────────────────────────────────────────
+
+def from_constrained_input(data, matrix) -> tuple[Matrix, ConstraintStructure]:
+    """拡張PSの入出力を、一般化BvN が受け取る形（期待割当＋制約構造）に変換する。
+
+    拡張PS（extended_ps_algorithm.py）は財を「文字列」で、制約を「上限のみ」で持つ。
+    一般化BvN は財を「列 index」で、制約を「下限＋上限」で持つ。その橋渡し。
+
+    変換の中身は、そのまま「1対1では暗黙のルールだったものが、
+    多対1ではすべて制約集合になる」という対応表になっている:
+
+        各人ちょうど1つ   → 行制約   row(i, m, 1, 1)
+        財 a の供給数 q_a → 列制約   column(a, n, 0, q_a)
+        追加の上限制約 S  → ConstraintSet(floor=0, ceil=S.upper)
+        ∅（何ももらわない）→ 制約を課さない（供給無制限）
+        1人が同じ財を2つ取らない → 単集合制約 [0, 1]
+
+    - data:   ConstrainedInput（prefs / capacities / goods / constraints を持つもの）
+    - matrix: ProbabilityMatrix（columns / rows を持つもの）
+    返り値: (期待割当行列, 制約構造)
+    """
+    columns = matrix.columns                       # [財..., ∅]
+    col_index = {c: k for k, c in enumerate(columns)}
+    n = len(matrix.rows)
+    m = len(columns)
+
+    X: Matrix = [[Fraction(v) for v in row] for row in matrix.rows]
+
+    sets: list[ConstraintSet] = []
+
+    # 各人ちょうど1つ（∅ を含めて行の和は必ず 1）
+    sets += [row(i, m, 1, 1, name=f"行{i}(各人1つ)") for i in range(n)]
+
+    # 財の供給数（∅ 列には制約を課さない）
+    for a in data.goods:
+        sets.append(
+            column(col_index[a], n, 0, data.capacities[a], name=f"列{a}(供給{data.capacities[a]})")
+        )
+
+    # 追加の上限制約（下限は 0）
+    for S in data.constraints:
+        sets.append(
+            ConstraintSet(
+                frozenset((i, col_index[a]) for (i, a) in S.pairs),
+                0,
+                S.upper,
+                name=S.label or f"上限制約(≤{S.upper})",
+            )
+        )
+
+    return X, ConstraintStructure(n, m, sets).with_singletons(0, 1)
+
+
+# ─────────────────────────────────────────────
 # 階層・二重階層の判定
 # ─────────────────────────────────────────────
 

@@ -6,22 +6,23 @@
 
 ## 構成
 
-| ファイル | 内容 | 対応章 |
-| --- | --- | --- |
-| `rp_algorithm.py` | RPメカニズム（均等確率優先順位）。全 n! 順序を列挙して厳密な確率行列を計算。共通の入力 `Input` / 出力 `ProbabilityMatrix` もここで定義。 | 第7章 |
-| `ps_algorithm.py` | PSメカニズム（同時確率消費／イーティングアルゴリズム）。連続的な「食べる」過程をイベント駆動で厳密にシミュレート。 | 第7章 |
-| `bvn_algorithm.py` | バーコフ＝フォン・ノイマンの定理。二重確率行列を二部マッチングで置換行列の凸結合に分解。 | 第9章 |
-| `assignment_check.py` | 性質検証モジュール。水平性・無羨望性・順序効率性・耐戦略性を検証し、`compare_mechanisms` でRP/PSを比較。 | 第7章 |
-| `rp_algorithm_exec.py` | RPの実行例（厳密計算＋モンテカルロ近似＋性質検証）。 | 第7章 |
-| `ps_algorithm_exec.py` | PSの実行例（例1・例2＋性質検証）。 | 第7章 |
-| `bvn_algorithm_exec.py` | BvN分解の実行例。PSの確率行列をBvN分解で「実現」する連携例を含む。 | 第7・9章 |
-| `extended_rp_algorithm.py` | 拡張RPメカニズム。制約を満たす範囲で逐次独裁制を行い、全順序列挙で厳密な期待行列を計算。**単体で完結**（モデル・制約・チェック・表示を自前で持つ）。 | 第9章 |
-| `extended_ps_algorithm.py` | 拡張PSメカニズム。獲得可能性（available）に基づくイベント駆動イーティングで順序効率的な期待行列を計算。**単体で完結**。 | 第9章 |
-| `extended_rp_algorithm_exec.py` | 拡張RPの実行例（会社の案件割り当て・4シナリオ）。 | 第9章 |
-| `extended_ps_algorithm_exec.py` | 拡張PSの実行例（会社の案件割り当て・4シナリオ）。 | 第9章 |
-| `extended_assignment_check.py` | **制約対応の性質検証モジュール**（`assignment_check.py` の拡張版）。水平性・無羨望性・順序効率性・耐戦略性を上限制約込みで検証。numpy でベクトル化、順序効率性は scipy.linprog で判定。 | 第9章 |
-| `generalized_bvn_algorithm.py` | **一般化BvN定理**（Budish–Che–Kojima–Milgrom 2013）。制約構造の bihierarchy 判定（交差グラフの2彩色）・奇サイクル検出・制約付き期待割当の厳密分解。**単体で完結**（標準ライブラリのみ）。 | 論文 |
-| `generalized_bvn_algorithm_exec.py` | 一般化BvNの実行例7本（BvN=特殊ケース／多対1の部分列制約／一般化PSの実装／奇サイクルで実装不可／効用保証／インターリーグ／3部マッチングの不可能性）。 | 論文 |
+| ファイル                            | 内容                                                                                                                                                                                                                                                            | 対応章   |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| `rp_algorithm.py`                   | RPメカニズム（均等確率優先順位）。全 n! 順序を列挙して厳密な確率行列を計算。共通の入力 `Input` / 出力 `ProbabilityMatrix` もここで定義。                                                                                                                        | 第7章    |
+| `ps_algorithm.py`                   | PSメカニズム（同時確率消費／イーティングアルゴリズム）。連続的な「食べる」過程をイベント駆動で厳密にシミュレート。                                                                                                                                              | 第7章    |
+| `bvn_algorithm.py`                  | バーコフ＝フォン・ノイマンの定理。二重確率行列を二部マッチングで置換行列の凸結合に分解。                                                                                                                                                                        | 第9章    |
+| `assignment_check.py`               | 性質検証モジュール。水平性・無羨望性・順序効率性・耐戦略性を検証し、`compare_mechanisms` でRP/PSを比較。                                                                                                                                                        | 第7章    |
+| `rp_algorithm_exec.py`              | RPの実行例（厳密計算＋モンテカルロ近似＋性質検証）。                                                                                                                                                                                                            | 第7章    |
+| `ps_algorithm_exec.py`              | PSの実行例（例1・例2＋性質検証）。                                                                                                                                                                                                                              | 第7章    |
+| `bvn_algorithm_exec.py`             | BvN分解の実行例。PSの確率行列をBvN分解で「実現」する連携例を含む。                                                                                                                                                                                              | 第7・9章 |
+| `extended_rp_algorithm.py`          | 拡張RPメカニズム。制約を満たす範囲で逐次独裁制を行い、全順序列挙で厳密な期待行列を計算。**単体で完結**（モデル・制約・チェック・表示を自前で持つ）。                                                                                                            | 第9章    |
+| `extended_ps_algorithm.py`          | 拡張PSメカニズム。獲得可能性（available）に基づくイベント駆動イーティングで順序効率的な期待行列を計算。**単体で完結**。`ps_algorithm.py` からの差分は挿入2箇所だけで、`diff -u ps_algorithm.py extended_ps_algorithm.py` / `grep 【拡張で追加】` で確認できる。 | 第9章    |
+| `extended_rp_algorithm_exec.py`     | 拡張RPの実行例（会社の案件割り当て・4シナリオ）。                                                                                                                                                                                                               | 第9章    |
+| `extended_ps_algorithm_exec.py`     | 拡張PSの実行例（会社の案件割り当て・4シナリオ）。                                                                                                                                                                                                               | 第9章    |
+| `extended_assignment_check.py`      | **制約対応の性質検証モジュール**（`assignment_check.py` の拡張版）。水平性・無羨望性・順序効率性・耐戦略性を上限制約込みで検証。numpy でベクトル化、順序効率性は scipy.linprog で判定。                                                                         | 第9章    |
+| `generalized_bvn_algorithm.py`      | **一般化BvN定理**（Budish–Che–Kojima–Milgrom 2013）。制約構造の bihierarchy 判定（交差グラフの2彩色）・奇サイクル検出・制約付き期待割当の厳密分解。**単体で完結**（標準ライブラリのみ）。                                                                       | 論文     |
+| `pipeline_exec.py`                  | **一気通貫**（選好 → 拡張PS → 一般化BvN → 純割当のくじ）。`from_constrained_input()` アダプタで拡張PSと一般化BvNを繋ぐ。                                                                                                                                        | 論文     |
+| `generalized_bvn_algorithm_exec.py` | 一般化BvNの実行例7本（BvN=特殊ケース／多対1の部分列制約／一般化PSの実装／奇サイクルで実装不可／効用保証／インターリーグ／3部マッチングの不可能性）。                                                                                                            | 論文     |
 
 ## 実行方法
 
@@ -36,6 +37,7 @@ python3 extended_rp_algorithm_exec.py   # 拡張RP（第9章・会社の案件�
 python3 extended_ps_algorithm_exec.py   # 拡張PS（第9章・会社の案件割り当て3シナリオ）
 
 python3 generalized_bvn_algorithm_exec.py  # 一般化BvN定理（bihierarchy・多対1・効用保証）
+python3 pipeline_exec.py                   # 一気通貫（選好 → 拡張PS → 一般化BvN）
 ```
 
 ## 性質の検証（assignment_check.py）
@@ -94,7 +96,7 @@ PSメカニズム（第7章）          BvN定理（第9章）
 
 既存の実行例4（ペア禁止制約と若手制約が同一案件上で交差する）が bihierarchy にならないことは、`find_bihierarchy()` が `None` を返し `find_odd_cycle()` が証拠の3つ組を返すことで機械的に確認できます。
 
-理論の概観と実装の解説は `../【実装編】多対1の割り当てと一般化BvN定理.md` にまとめています。
+理論の概観と実装の解説は `../【実装②】多対1の割り当てと一般化BvN定理.md` にまとめています。
 
 ## 計算量に関する注意
 

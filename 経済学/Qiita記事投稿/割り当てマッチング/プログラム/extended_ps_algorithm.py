@@ -1,15 +1,5 @@
 """
 拡張 Probabilistic Serial (PS) Mechanism — 制約付き同時確率消費メカニズム
-
-注意（実装可能性）:
-  本メカニズムが返すのは，制約を「期待値の意味で」満たす期待行列である。これを
-  「制約を満たす確定的割り当ての上のくじ」として実装（分解）できることが保証される
-  のは，行制約（各人1つ）・列制約（供給数）・追加の上限制約からなる制約構造が
-  bihierarchy（2つの階層族の和）をなす場合である
-  （Budish, Che, Kojima and Milgrom 2013, American Economic Review 103, 定理1）。
-  ペア禁止制約と属性上限制約が同一の財の上で交差する場合（実行例4）などは
-  bihierarchy にならず，分解可能性は保証されない。なお拡張RPは構成上つねに
-  「実行可能な確定的割り当ての上のくじ」なので，この問題は生じない。
 """
 
 from __future__ import annotations
@@ -44,7 +34,7 @@ class ConstrainedInput:
 
     prefs: list[list[str]]
     capacities: dict[str, int]
-    constraints: list[Constraint] = field(default_factory=list)
+    constraints: list[Constraint] = field(default_factory=list)   # 【拡張で追加】
     agent_names: list[str] | None = None
     agent_label: str = "個人"
     object_label: str = "財"
@@ -86,11 +76,29 @@ class ProbabilityMatrix:
     columns: list[str]
     rows: list[list[Fraction]]
     agent_label: str = "個人"
+    agent_names: list[str] | None = None
+
+    def row_of(self, agent: int) -> list[Fraction]:
+        return self.rows[agent]
+
+    def name(self, agent: int) -> str:
+        if self.agent_names:
+            return self.agent_names[agent]
+        return f"{self.agent_label}{agent + 1}"
+
+    def __str__(self) -> str:
+        name_w = max((len(self.name(i)) for i in range(len(self.rows))), default=4)
+        header = " " * (name_w + 2) + "  ".join(f"{c:>6}" for c in self.columns)
+        lines = [header]
+        for i, row in enumerate(self.rows):
+            cells = "  ".join(f"{frac_str(p):>6}" for p in row)
+            lines.append(f"{self.name(i):<{name_w}}  {cells}")
+        return "\n".join(lines)
 
 
 @dataclass
 class CheckResult:
-    """制約充足チェックの結果"""
+    """制約充足チェックの結果【拡張で追加】"""
 
     passed: bool
     violations: list[str] = field(default_factory=list)
@@ -115,9 +123,6 @@ def extended_probabilistic_serial(
     verbose: bool = True,
 ) -> ProbabilityMatrix:
     """拡張PSメカニズムが定める期待行列を返す。
-
-    ps_algorithm.probabilistic_serial を上限制約付きに拡張したもの。各局面で
-    「獲得可能（供給に空きがあり上限制約に余地がある）」な財だけを食べる点が異なる。
 
     - data:
         制約付き割り当て問題の入力（選好・供給数・上限制約）。
@@ -146,6 +151,7 @@ def extended_probabilistic_serial(
                 if item == EMPTY:
                     break
                 amt = remaining.get(item)          # 供給に無い財は None → 無視（RP版の .get と同挙動）
+                # and 以降が【拡張で追加】：関係する上限制約にまだ余地があるかも見る
                 if amt is not None and amt > 0 and _within_constraints(data, agent, item, rows, col_index):
                     alloc[agent] = item
                     break
@@ -168,7 +174,7 @@ def extended_probabilistic_serial(
                 remaining[good] = amt - alloc.count(good) * dt
         t += dt
 
-    matrix = ProbabilityMatrix(columns=columns, rows=rows, agent_label=data.agent_label)
+    matrix = ProbabilityMatrix(columns=columns, rows=rows, agent_label=data.agent_label, agent_names=data.agent_names)
     if verbose:
         print_result(data, matrix, "拡張PSメカニズムの期待行列")
     return matrix
@@ -181,7 +187,7 @@ def _within_constraints(
     rows: list[list[Fraction]],
     col_index: dict[str, int],
 ) -> bool:
-    """(agent, item) を含む全ての上限制約にまだ余地があるか（獲得可能性の制約部分）。"""
+    """(agent, item) を含む全ての上限制約にまだ余地があるか（獲得可能性の制約部分）。【拡張で追加】"""
     for S in data.constraints:
         if (agent, item) in S.pairs:
             cur = sum((rows[i][col_index[a]] for (i, a) in S.pairs), Fraction(0))
@@ -229,7 +235,7 @@ def frac_str(x: Fraction) -> str:
 
 
 def check_constraints(data: ConstrainedInput, matrix: ProbabilityMatrix, verbose: bool = True) -> CheckResult:
-    """期待行列がすべての制約（供給数・1人1案件・追加の上限制約）を満たすか検証する。"""
+    """期待行列がすべての制約（供給数・1人1つ・追加の上限制約）を満たすか検証する。【拡張で追加】"""
     col_index = {c: k for k, c in enumerate(matrix.columns)}
     n = data.n_agents
     violations: list[str] = []
@@ -257,12 +263,13 @@ def check_constraints(data: ConstrainedInput, matrix: ProbabilityMatrix, verbose
 
 def print_input(data: ConstrainedInput) -> None:
     print(f"【{data.agent_label}の選好（左ほど希望が高い）】")
-    for i in range(data.n_agents):
-        print(f"  {data.name(i)}: {', '.join(data.prefs[i])}")
+    for i, pref in enumerate(data.prefs):
+        print(f"  {data.name(i)}: {', '.join(pref)}")
     print()
     print(f"【{data.object_label}の供給数（必要人数）】")
     print("  " + ", ".join(f"{a}: {q}人" for a, q in data.capacities.items()))
-    if data.constraints:
+    if data.constraints:                           # 【拡張で追加】
+
         print()
         print("【追加の制約】")
         for S in data.constraints:
@@ -283,7 +290,7 @@ def _pad_label(s: str, width: int) -> str:
 def print_result(data: ConstrainedInput, matrix: ProbabilityMatrix, title: str, *, as_float: bool = False) -> None:
     col_index = {c: k for k, c in enumerate(matrix.columns)}
     n = data.n_agents
-    # 行ラベル（各社員名 + 「期待人数」）を表示幅でそろえる
+    # 行ラベル（各個人名 + 「期待人数」）を表示幅でそろえる
     labels = [data.name(i) for i in range(n)] + ["期待人数"]
     label_w = max(_disp_width(s) for s in labels)
     fmt = (lambda x: f"{float(x):.3f}") if as_float else frac_str   # as_float=True で小数表示
